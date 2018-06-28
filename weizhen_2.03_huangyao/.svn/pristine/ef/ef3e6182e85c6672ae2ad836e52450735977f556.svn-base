@@ -1,0 +1,140 @@
+.header {
+  width: 100%;
+  height: 90rpx;
+  background: #fff;
+  margin-top: 2rpx;
+  margin-bottom: 16rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.status {
+  color: #2b333b;
+  font-size: 30rpx;
+  position: relative;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+
+.on {
+  color: #ff5d00;
+  border-bottom: 4rpx solid #ff5d00;
+}
+
+.line {
+  position: absolute;
+  right: -24rpx;
+  bottom: 50%;
+  margin-bottom: -16rpx;
+  width: 2rpx;
+  height: 32rpx;
+  background-color: #b7bbbf;
+}
+
+.order {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+
+.order_detail {
+  width: 700rpx;
+  background-color: #fff;
+}
+
+.order_top, .order_mid, .order_bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.order_top {
+  width: 100%;
+  height: 90rpx;
+  color: #7e7e7e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+
+.order_mid {
+  width: 100%;
+  height: 190rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #f5f5f5;
+  box-sizing: border-box;
+}
+
+.order_img {
+  width: 160rpx;
+  height: 160rpx;
+  background-color: #ccc;
+  border-radius: 20rpx;
+}
+
+.order_dec {
+  width: 400rpx;
+  height: 150rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 30rpx;
+}
+
+.order_right {
+  width: 40rpx;
+  height: 150rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-left: 80rpx;
+}
+
+.order_bottom {
+  width: 100%;
+  height: 88rpx;
+  display: flex;
+  font-size: 24rpx;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.cancel {
+  width: 120rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: #2b333b;
+  border: 1px solid #d9dde1;
+  border-radius: 10rpx;
+  margin-right: 25rpx;
+}
+
+.comfirm {
+  width: 120rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: #fff;
+  background-color: #ff5d00;
+  border-radius: 10rpx;
+}
+
+.money {
+  height: 72rpx;
+  display: flex;
+  color: #333;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 26rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+}

@@ -1,0 +1,31 @@
+.header{
+  height: 106rpx;
+}
+.search_bar{
+  height: 106rpx;
+}
+.search_input{
+  margin-left: 40rpx;
+}
+.input{
+  width: 460rpx;
+  height: 100%;
+  font-size: 30rpx;
+  padding-left: 40rpx;
+  color: #71777d;
+}
+.search_text{
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #71777d;
+  margin-left: 10rpx;
+  text-align: center;
+}
+.shop_img{
+  background-color: #fff;
+}
+.shops_detail{
+  background-color: #fff;
+}

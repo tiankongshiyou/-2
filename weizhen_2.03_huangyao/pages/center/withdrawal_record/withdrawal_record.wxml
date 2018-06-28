@@ -1,0 +1,21 @@
+<view class='container'>
+  <view class='top'>
+     <block wx:for="{{put_forward}}" wx:key="key" > 
+      <view class='top-box' wx:if="{{put_forward !== 0}}">
+        <view class='txt_img_time' >
+          <view class='txt_img'>
+            <image src='/img/withdrawal_record/cashwithdrawal@2x.png' style='width:78rpx;height:78rpx;margin-right:28rpx'></image>
+            <view>
+              <view style='font-size:30rpx;color:#333'>提现</view>
+              <view style='font-size:24rpx;color:#b7bbbf'>{{item.reflectDate}}</view>
+            </view>
+          </view>
+          <view style='font-size:30rpx;color:#333;margin-left:290rpx'>{{item.reflectJe}}</view>
+        </view>
+      </view>
+     </block> 
+  </view>
+   <view class='container_btn' else if="{{put_forward == 0}}" >
+      <text>暂无记录</text>
+    </view> 
+</view>

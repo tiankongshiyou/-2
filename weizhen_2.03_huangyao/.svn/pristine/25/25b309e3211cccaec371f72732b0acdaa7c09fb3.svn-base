@@ -1,0 +1,23 @@
+<!-- 头像start -->
+<view class='head_portrait'>
+  <image class='portrait_img' src='/img/enter/head_portrait.png'></image>
+  <view class='ification'>
+    <image src='/img/enter/toux@2x.png'></image>
+    <text>微信昵称</text>
+  </view>
+</view>
+<!-- 头像end -->
+
+<!-- 入驻二维码start -->
+<view class='scavenging'>
+  <view class='scan_enter'>扫描下方二维码入驻微阵</view>
+  <image src='{{cdnaddr}}{{userInfo.body}}'></image>
+  <view class='because_of'>基于12亿微信用户的商家共赢平台</view>
+</view>
+<!-- 入驻二维码end -->
+
+<!-- 公司标志start -->
+<view class='designate'>
+  <image src='/img/enter/footer@2x.png'></image>
+</view>
+<!-- 公司标志end -->

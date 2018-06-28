@@ -1,0 +1,68 @@
+<!--pages/about_wx/about_wx.wxml-->
+<view class='about_wx'>
+  <!-- 顶部图片 -->
+  <view class='about_top'>
+    <image src='/img/about_wx/banner标题@2x.png'></image>
+  </view>
+  <!-- 关于我们 -->
+   <view class='about_title'>
+    <image src='/img/about_wx/line.png'></image>
+    <view style='margin:0 34rpx 0 34rpx;'>关于我们</view>
+    <image src='/img/about_wx/line.png'></image>
+  </view>
+  <!-- 文字介绍 -->
+  <view class='about_present'>
+    <view class='about_text'>
+      <text space="ensp">    \t湖南微阵信息技术有限公司成立于2015年10月12日座落在湖南省长沙市书院路9号保利国际广场B3栋。
+     我们是一家专注于计算机网络平台建设与开发、软件技术服务、互联网信息服务、物联网技术研发为一体综合服务平台；同时也是腾讯官方授权的微信支付服务商、微信广告服务商，湖南省3A级诚信企业，湖南省守合同重信用企业，全国企业行业文化建设文明单位。</text>
+    </view>
+  </view>
+  <!-- 地图 -->
+  <view class='map_about'>
+    <view class='map'>
+      <image style='width:500rpx;height:402rpx;' src='/img/about_wx/map_about.png'></image>
+      <view style='width:500rpx;text-align:center;margin-top:8rpx;'>全国运营中心分布图</view>
+    </view>
+  </view>
+  <!-- 入驻微阵 -->
+  <view class='wx_img'>
+    <image src='/img/about_wx/banner2@2x.png'></image>
+  </view>
+
+  <view class='about_title'>
+    <image src='/img/xian.png'></image>
+    <view style='margin:0 34rpx 0 34rpx;'>您能得到</view>
+    <image src='/img/xian.png'></image>
+  </view>
+
+  <!-- 文字介绍 -->
+  <view class='about_present'>
+    <view class='jieshao' style='width:85%'>
+      <view>1.1000张免费优惠券在微阵联盟平台精准客户投放。</view>
+      <view>2.客户第一次消费，即刻锁粉；长期享受源源不断跨界营收。</view>
+      <view>3.店铺越活跃，帮您排名越靠前；客户一键搜到您。</view>
+      <view>4.全天24小时周边5公里定位搜索，客户时时刻刻可以搜到您。</view>
+      <view>5.店铺名称一旦注册，终身归属，且不重名。</view>
+    </view>
+  </view>
+
+
+  <view class='about_bto'>
+    <image class='about_btoimg' src='/img/about_wx/org_bg.png'></image>
+    <view class='about_btn'>
+      <view class='about_btotxt'>
+
+        <view class='about_lianxi'>      
+            <image src='/img/about_wx/xian02.png' style='margin-right:16rpx'></image>
+            <view>联系我们</view>
+            <image src='/img/about_wx/xian02.png' style='margin-left:16rpx'></image>
+
+          </view>
+          <view class='about_phone'>地址：湖南省长沙市天心区南湖路保利国际广场6楼</view>
+          <view class='about_phone'>电话：0731-8444 6664</view>
+      </view>
+      
+    </view>
+
+  </view>
+</view>

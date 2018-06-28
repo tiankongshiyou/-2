@@ -1,0 +1,54 @@
+page {
+  background: #f3f5f7;
+}
+
+.auditing_finally {
+  margin-top: 16rpx;
+  padding: 32rpx 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.auditing_state {
+  display: flex;
+  justify-content: center;
+}
+
+.auditing_state image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.state {
+  color: #4d4d4d;
+  font-size: 32rpx;
+  margin-top: 32rpx;
+  text-align: center;
+}
+
+.refer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 42rpx 0 0 0;
+}
+
+.refer text {
+  color: #ff5d00;
+  font-size: 30rpx;
+}
+
+.refer image {
+  width: 16rpx;
+  height: 27rpx;
+}
+
+.state_reason {
+  line-height: 38rpx;
+  color: #b3b3b3;
+  font-size: 26rpx;
+  text-indent: 60rpx;
+  margin: 82rpx 83rpx 0 83rpx;
+}

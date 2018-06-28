@@ -1,0 +1,86 @@
+<view class='container'>
+<!-- 搜索 -->
+  <view class='top_box'>
+    <view class='top_searchbox'>
+      <view style='display:flex;flex-wrap:nowrap'>
+        <view class='top_box_img'>
+          <image src='/img/search@2x.png' style='width:30rpx;height:30rpx;'></image>
+        </view>
+        <input class='top_search' placeholder-style="background-color:#e6e6e6;font-size:30rpx;" placeholder='微阵联盟抢新礼品' style='background:#e6e6e6;' bindinput='search' bindconfirm='search_confirm'></input>
+      </view>
+      <view style='color:red;font-size:30rpx;line-height:72rpx' bindtap='query'>搜索</view>
+    </view>
+  </view>
+
+<!-- 出售、下架栏 -->
+  <view class="swiper-tab">
+    <view style='width:702rpx;display:flex;margin-left:24rpx;justify-content:space-around'>
+      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">出售中</view>
+      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">已下架</view>
+    </view>
+  </view>
+  <view class="swiper-tab-temp"></view>
+
+    <swiper current="{{currentTab}}" class="swiper-box" bindchange="bindChange">
+
+<!-- 出售栏 -->
+      <swiper-item style='display:flex;flex-wrap:wrap; justify-content:space-between; width: 702rpx;'>
+        
+        <view class='shop_box'>
+          <view class='shop_detailed'>
+            <view bindtap='jump'>
+              <image src='{{item.goodsPic}}' style='height:305rpx;background:#e6e6e6;width:100%'></image>
+              <view style='display:flex;flex-wrap:wrap;font-size:26rpx;height:175rpx;margin-left:16rpx'>
+              <view style='display:flex;flex-wrap: nowrap;align-items:center; align-items:flex-start; margin-bottom:30rpx;'>
+                <view style='font-size:36rpx;color:#e62318'><text>￥</text>{{item.goodsPrices}}599</view>
+                <view style='font-size:20rpx;color:#b7bbbf;text-decoration:line-through;'><text>￥</text>600</view>
+              </view>
+              <view style='overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin_bottom:18rpx'>{{item.goodsName}}新款时尚圆领百花搭配搭配什么</view>
+              <view style='display:flex;flex-wrap: nowrap;color:#808080'>
+              <view style='display:flex;flex-wrap: nowrap'>
+                <view style='margin-right:32rpx;'>
+                  销量 <text>236</text>
+                </view>
+                <view>
+                  库存 <text>12</text> 
+                </view>
+              </view>
+              </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        
+      </swiper-item>
+
+<!-- 下架栏目 -->
+      <swiper-item style='display:flex;flex-wrap:wrap; justify-content:space-between; width: 702rpx;'>
+        
+        <view class='shop_box'>
+          <view class='shop_detailed'>
+            <view>
+              <image src='{{item.goodsPic}}' style='height:305rpx;background:#e6e6e6;width:100%'></image>
+              <view style='display:flex;flex-wrap:wrap;font-size:26rpx;height:175rpx;margin-left:16rpx'>
+              <view style='display:flex;flex-wrap: nowrap;align-items:center; align-items:flex-start; margin-bottom:30rpx;'>
+                <view style='font-size:36rpx;color:#e62318'><text>￥</text>{{item.goodsPrices}}599</view>
+                <view style='font-size:20rpx;color:#b7bbbf;text-decoration:line-through;'><text>￥</text>600</view>
+              </view>
+              <view style='overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin_bottom:18rpx'>{{item.goodsName}}新款时尚圆领百花搭配搭配什么</view>
+              <view style='display:flex;flex-wrap: nowrap;color:#808080'>
+              <view style='display:flex;flex-wrap: nowrap'>
+                <view style='margin-right:32rpx;'>
+                  销量 <text>236</text>
+                </view>
+                <view>
+                  库存 <text>12</text> 
+                </view>
+              </view>
+              </view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+      </swiper-item>
+    </swiper>
+</view>

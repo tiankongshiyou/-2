@@ -1,0 +1,44 @@
+.top_img{
+  width: 100%;
+  height: 300rpx;
+  background-color: #ddd;
+}
+
+.title{
+  width: 100%;
+  height: 136rpx;
+  background-color: #fff;
+  display:flex;
+  justify-content:center;
+  margin-bottom: 8rpx;
+}
+
+.shops_detail{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rpx;
+}
+
+.container_buttom{
+  width: 702rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.container_buttom_shop{
+  width: 347rpx;
+  height: 336rpx;
+}
+.shop_img{
+  height: 186rpx;
+}
+.shop_bottom{
+  height: 150rpx;
+}
+.shop_name{
+  width: 300rpx;
+  margin-top: 12rpx;
+}
+.shop_coupon{
+  width: 300rpx;
+  margin-bottom: 22rpx;
+}

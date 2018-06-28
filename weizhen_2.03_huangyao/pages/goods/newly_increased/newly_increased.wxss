@@ -1,0 +1,88 @@
+page {
+  background: #f3f5f7;
+}
+
+.increased {
+  background: #fff;
+  margin-top: 16rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.consignee {
+  height: 100rpx;
+  margin: 0 24rpx;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  border-bottom:  1rpx solid #e6e6e6;
+}
+
+.heading {
+  width: 25%;
+  color: #333;
+}
+
+.details {
+  width: 75%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+
+.details picker {
+  width: 95%;
+  color: #b7bbbf;
+}
+
+.details input {
+  width: 100%;
+  color: #b7bbbf;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.phcolor {
+  color: #b7bbbf;
+}
+
+.details image {
+  width: 30rpx;
+  height: 18rpx;
+  margin-right: 10rpx;
+}
+/* 默认地址栏设置start */
+.tacitly_approve {
+  height: 100rpx;
+  margin: 0 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tacitly_approve text {
+  width: 50%;
+  color: #333;
+  font-size: 30rpx;
+}
+
+.tacitly_approve image {
+  width: 64rpx;
+  height: 64rpx;
+}
+/* 默认地址栏设置end */
+
+/* 确定按钮start */
+.submit {
+   margin: 188rpx 24rpx 0 24rpx; 
+}
+
+.submit button {
+  width: 702rpx;
+  height: 88rpx;
+  color: #fff;
+  font-size: 34rpx;
+  background: #ff5d00;
+  border-radius: 16rpx;
+}
+/* 确定按钮end */

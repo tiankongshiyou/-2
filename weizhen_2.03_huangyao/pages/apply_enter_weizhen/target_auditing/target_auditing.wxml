@@ -1,0 +1,37 @@
+<!-- 商户资料start -->
+<view class='seller'>
+  <view class='seller_means'>
+    <text>真实姓名</text>
+    <input type='text' placeholder-class='cue_writing' placeholder='请输入真实姓名' value='' bindinput='userName'></input>
+  </view>
+  <view class='seller_means seller_password'>
+    <text>身份证号码</text>
+    <input type='text' placeholder-class='cue_writing' placeholder='请输入身份证号码' value='' bindinput='identityCard' maxlength='18'></input>
+  </view>
+</view>
+<!-- 商户资料end -->
+
+<!-- 上传营业执照start -->
+<view class="business_licence">
+  <view class='upload_license'>
+    <text class='upload_prompt'>请上传身份证</text>
+    <text class='upload_matter'>(上传照片文字清晰，露出白边和国徽)</text>
+  </view>
+  <view class='upload_photo'>
+    <view class='front'  bindtap='straightImage'>
+      <image wx:if="{{straight}}" src='{{straight}}'></image>
+      <image wx:else src='/images/enter/2zheng@2x.png'></image>
+    </view>
+    <view class='the_back'  bindtap='rebellionImage'>
+      <image wx:if="{{rebellion}}" src='{{rebellion}}'></image>
+      <image wx:else src='/images/enter/7fan@2x.png'></image>
+    </view>
+  </view>
+</view>
+<!-- 上传营业执照end -->
+
+<!-- 提交按钮start -->
+<view class='submit' bindtap='sumbit'>
+  <button>提交</button>
+</view>
+<!-- 提交按钮end -->

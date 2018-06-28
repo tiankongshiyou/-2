@@ -1,0 +1,11 @@
+<view class="withdraw_cash">
+  <view class='password'>
+    <text>验证码</text>
+    <input type='number' placeholder-class='prompt_colcor' password="true" placeholder='请输入验证码' maxlength='6' bindblur='identityValidate' bindinput='identityValidate'/>
+  </view>
+</view>
+<!-- 提交按钮start -->
+<view class='submit' bindtap='installPassword'>
+  <button>提交</button>
+</view>
+<!-- 提交按钮end -->

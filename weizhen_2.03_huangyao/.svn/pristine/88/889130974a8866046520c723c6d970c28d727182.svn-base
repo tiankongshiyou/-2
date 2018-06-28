@@ -1,0 +1,51 @@
+<!-- 商户资料start -->
+<view class='seller'>
+  <view class='seller_means'>
+    <text>商户账号</text>
+    <input type='text' p-placeholder-class='cue_writing' placeholder='请输入手机号码' maxlength='11' value=''></input>
+  </view>
+  <view class='seller_means seller_password'>
+    <text>密码</text>
+    <input type='text' p-placeholder-class='cue_writing' placeholder='请输入6位数密码' maxlength='6' value=''></input>
+  </view>
+  <view class='seller_means'>
+    <text>店铺名称</text>
+    <input type='text' p-placeholder-class='cue_writing' placeholder='请输入店铺名称' value=''></input>
+  </view>
+</view>
+<!-- 商户资料end -->
+
+<!-- 商家优惠券start -->
+<view class='seller_coupon'>
+  <view class='value_voucher'>
+    <view class='seller_check'>
+      <image class='tacitly_approve' src='/img/enter/2yes@2x.png'></image>
+      <image class='coupon_receive' src='/img/enter/2youhui@2x.png'></image>
+    </view>
+    <view class='coupon_situation'>
+      <view class='coupon_quantity'>商家优惠券500张</view>
+      <view class='coupon_number'>
+        <text class='price'>￥299.0</text>
+        <text class='sheets'>x 1</text>
+      </view>
+    </view>
+  </view>
+  <view class='protocol'>
+    <image class='tacitly_approve' src='/img/enter/2yes@2x.png'></image>
+    <text class='protocol_detail'>我已经阅读并同意</text>
+    <text class='protocol_enter'>《微阵联盟用户入驻协议》</text>
+  </view>
+</view>
+<!-- 商家优惠券end -->
+
+<!-- 合计start -->
+<view class='amount_to'>
+  <view class='summation'>
+    <text class='amount_caption'>合计：</text>
+    <text class='money'>￥299.0</text>
+  </view>
+  <view class='sumbit' bindtap='referAuditing'>
+    <button>确认支付</button>
+  </view>
+</view>
+<!-- 合计end -->

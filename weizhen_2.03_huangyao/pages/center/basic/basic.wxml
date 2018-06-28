@@ -1,0 +1,62 @@
+<!-- 头像start -->
+<view class='must'>
+  <view class='head_sculpture'>头像</view>
+  <view class='user_identity'>
+    <image class='head_portrait' src='{{userInfo.wxImg}}'></image>
+    <image class='right_arrow' src='/img/basic/go-to14@2x.png'></image>
+  </view>
+</view>
+<!-- 头像end -->
+
+<!-- 商家信息start -->
+<view class='information'>
+  <view class='specific'>
+    <view class='heading'>店铺名称</view>
+    <view class='particulars'>
+    <text class='reveal' wx:if='{{userInfo.shopName == null || userInfo.shopName == ""}}'>您还木有店铺哦</text>
+      <text class='reveal' wx:else>{{userInfo.shopName}}</text>
+    </view>
+  </view>
+  <view class='specific crewel'>
+    <view class='heading'>真实姓名</view>
+    <view class='particulars'>
+      <input placeholder='{{userInfo.wxNc}}' bindblur='bindblur' bindinput='bindinput' placeholder-class='inputs'></input>
+    </view>
+  </view>
+  <view class='specific monoline'>
+    <view class='heading'>联系电话</view>
+    <view class='particulars' bindtap='noPhone'>
+      <view wx:if="{{userInfo.phone == null}}">
+        <text class='revise'></text>
+      </view>
+      <view wx:else bindtap='replacePhone'>
+        <text class='revise' >{{userInfo.phone}}</text>
+      </view>
+      <image class='right_arrow' src='/img/basic/go-to14@2x.png'></image>
+    </view>
+  </view>
+  <view class='specific' bindtap='deliveryAddress'>
+    <view class='heading'>收货地址</view>
+    <view class='particulars'>
+      <image class='right_arrow' src='/img/basic/go-to14@2x.png'></image>
+    </view>
+  </view>
+</view>
+<!-- 商家信息end -->
+
+<!-- 修改充值start -->
+<view class='withdraw'>
+  <view class='specific monoline' bindtap='amend'>
+    <view class='heading'>修改提现密码</view>
+    <view class='particulars'>
+      <image class='right_arrow' src='/img/basic/go-to14@2x.png'></image>
+    </view>
+  </view>
+  <view class='specific' bindtap='resetting'>
+    <view class='heading'>重置提现密码</view>
+    <view class='particulars'>
+      <image class='right_arrow' src='/img/basic/go-to14@2x.png'></image>
+    </view>
+  </view>
+</view>
+<!-- 修改充值end -->

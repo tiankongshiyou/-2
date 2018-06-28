@@ -1,0 +1,12 @@
+/* pages/center/about_text/about_text.wxss */
+page{
+  background: #fff;
+}
+view{
+  width:90%;
+  margin:0 auto 0;
+}
+text{
+  font-size: 26rpx;
+  color: #333;
+}

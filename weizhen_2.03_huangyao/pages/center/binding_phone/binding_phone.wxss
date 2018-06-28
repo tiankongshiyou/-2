@@ -1,0 +1,65 @@
+page {
+  font-size: 30rpx;
+  background: #f3f5f7;
+  overflow-y: hidden;
+}
+
+.binding {
+  background: #fff;
+  margin-top: 16rpx;
+}
+
+.binding_number {
+  height: 100rpx;
+  margin: 0 42rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+
+ .binding_number text, .validate_phone text {
+  width: 160rpx;
+  color: #333;
+} 
+
+.obtain {
+  width: 170rpx;
+  height: 56rpx;
+  color: #fff;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 56rpx;
+  background: #ff5d00;
+  border-radius: 8rpx;
+}
+
+.validate_phone {
+  height: 100rpx;
+  margin: 0 42rpx;
+  display: flex;
+  align-items: center;
+}
+
+.validate_phone input {
+ width: 85%;
+ color: #b7bbbf;
+}
+
+.prompt {
+  color: #b7bbbf;
+}
+
+.submit {
+  margin-top: 210rpx;
+  background: #f3f5f7;
+}
+
+.submit button {
+  width: 702rpx;
+  height: 88rpx;
+  color: #fff;
+  font-size: 34rpx;
+  background: #ff5d00;
+  border-radius: 16rpx;
+}
+

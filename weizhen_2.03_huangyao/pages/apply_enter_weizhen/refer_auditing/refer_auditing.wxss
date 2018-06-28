@@ -1,0 +1,56 @@
+page {
+  font-size: 30rpx;
+  background: #f3f5f7;
+}
+
+/* 上传营业执照start */
+.business_licence {
+  background: #fff;
+  margin-top: 16rpx;
+  padding: 34rpx 42rpx 42rpx 42rpx;
+}
+
+.upload_license {
+  padding-bottom: 35rpx;
+}
+
+.upload_license text {
+  font-size: 28rpx;
+}
+
+.upload_prompt {
+  color: #4d4d4d; 
+}
+
+.upload_matter {
+  color: #b3b3b3;
+  margin-left: 12rpx;
+}
+
+.upload_photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1rpx solid #e6e6e6;
+}
+
+.upload_photo image {
+  width: 666rpx;
+  height: 354rpx;
+}
+/* 上传营业执照end */
+
+/* 提交按钮start */
+.submit {
+  margin-top: 72rpx;
+}
+
+.submit button {
+  width: 702rpx;
+  height: 88rpx;
+  color: #fff;
+  font-size: 34rpx;
+  background: #ff5d00;
+  border-radius: 16rpx;
+}
+/* 提交按钮end */

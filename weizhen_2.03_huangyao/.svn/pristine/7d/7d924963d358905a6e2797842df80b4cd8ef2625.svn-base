@@ -1,0 +1,28 @@
+<view class="payment">
+  <view class='payoff'>
+    <text class='payment_give'>付款给：</text>
+    <image src='/img/defrayal/8dianpu@2x.png'></image>
+    <text class='payment_seller'>林欣欣可爱的小店</text>
+  </view>
+  <view class='payoff_consume'>
+    <text class='payoff_total'>消费总额：</text>
+    <input type='text' placeholder-class='payoff_entry' placeholder='请询问收银员后输入'></input>
+  </view>
+  <view class='payoff_coupon'>
+    <text class='payment_give coupon'>优惠券</text>
+    <text class='usable_coupon'>110张可用</text>
+  </view>
+</view>
+
+<!-- 合计按钮start -->
+<view class='summation'>
+  <view class='total'>
+    <text class='confirm'>合计：</text>
+    <text class='money'>￥00.0</text>
+    <text class='preferential'>(已优惠￥0)</text>
+  </view>
+  <view class='submit' bindtap='defraySuccess'>
+    <button>确认支付</button>
+  </view>
+</view>
+<!-- 合计按钮end -->

@@ -1,0 +1,36 @@
+<view class='container'>
+  <view class='delivery'>
+    <image src='/img/address.png' style='width:50rpx;height:50rpx;margin-left:16rpx;'></image>
+    <view class='address' style='color:#71777d;font-size:34rpx;margin-left:16rpx;'>请填写收货地址</view>
+    <image src='/img/more.png' style='width:46rpx;height:46rpx;margin-left:360rpx;'></image>
+  </view>
+  <view class='shop_name'>
+    <view style='margin-left:16rpx;color:#2b333b;font-size:30rpx;'>店铺名称</view>
+  </view>
+  <view class='goods_detail'>
+    <image src='' class='goods_img'></image>
+    <view class='goods_dec'>
+      <view style='font-size:34rpx;color:#71777d'>时装、男装、女装</view>
+      <view style='font-size:40rpx;color:#ff5d00'>￥200.00</view>
+    </view>
+    <view style='width:46rpx;height:46rpx;color:#71777d'>X1</view>
+  </view>
+  <view class='delivery_method'>
+    <view style='margin-left:16rpx;color:#2b333b;font-size:30rpx;'>配送方式</view>
+  </view>
+  <view class='coupons'>
+    <view style='background:#fff5f4;border:1px solid #fecfcc;color:#fb4e44;padding:0 10rpx;margin-left:16rpx;'>券</view>
+    <view style='font-size:30rpx;color:#2b333b;margin-left:16rpx;'>优惠券</view>
+    <image src='/img/goto.png' style='width:40rpx;height:40rpx;margin-left:490rpx;'></image>
+  </view>
+  <view class='leave_message'>
+    <view style='margin-left:16rpx;color:#2b333b;font-size:30rpx;'>买家留言</view>
+    <input style='width:580rpx;padding-left:20rpx;font-size:30rpx;color:#2b333b;' placeholder-style='color:#71777d' placeholder='想对商家说...'></input>
+  </view>
+  <!--底部  -->
+  <view class='confirm_button'>
+    <view style='color:#b7bbbf;font-size:30rpx;margin-left:16rpx;'>合计</view>
+    <view style='font-size:40rpx;color:#ff5d00;margin-left:16rpx;'>￥200.00</view>
+    <view style='margin-left:300rpx;color:#fff;font-size:30rpx;background:#fb4e44;padding:6rpx 20rpx;border-radius:30rpx;'>提交订单</view>
+  </view>
+</view>

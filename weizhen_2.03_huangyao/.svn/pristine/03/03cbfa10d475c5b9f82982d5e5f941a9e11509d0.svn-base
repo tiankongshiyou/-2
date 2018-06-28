@@ -1,0 +1,14 @@
+<!--pages/online_chat/online_chat.wxml-->
+<view class='online_chat'>
+  <!-- 在线资讯 -->
+  <view class='chat_kuang'>
+    <textarea bindinput='textarea' maxlength="500" placeholder='请输入您的建议，500字以内哦~' placeholder-style='font-size:32rpx;color:#d9dde1 '></textarea>
+
+  </view>
+  <view class='btn' bindtap='sumit'>提交</view>
+  <view class='chat_text'>
+    <image src='/img/online_chat/phone2.png' style='width:32rpx;height:32rpx;'></image>
+    <text style='color:#333;margin-left:10rpx;'>客服电话：</text>
+    <text style='color:#ff5d00'>0731-84446664</text>
+  </view>
+</view>

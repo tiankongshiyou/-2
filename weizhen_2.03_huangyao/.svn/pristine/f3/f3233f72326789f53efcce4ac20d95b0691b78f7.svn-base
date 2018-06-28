@@ -1,0 +1,128 @@
+// pages/search/search.js
+const app = getApp()
+var addr = app.globalData.addr
+var cdnaddr = app.globalData.cdnaddr
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    this.setData({
+      cdnaddr: cdnaddr
+    })
+  },
+  //搜索框的值
+  search_shops:function(e){
+    var that = this;
+    that.setData({
+      search_text: e.detail.value
+    })
+  },
+  //搜索函数
+  search_fun : function(e){
+    var that = this;
+    if(that.data.search_text == null || that.data.search_text == undefined){
+      wx.showToast({
+        title: '不能为空',
+        image: '/img/search_shop/fault.png',
+        duration: 600,
+      })
+      return
+    }else{
+      wx.showLoading({
+        title: '搜索中',
+      })
+      wx.request({
+        url: addr + "/wx/shops/queryGoodsDetail",
+        data: {
+          shopname: that.data.search_text
+        },
+        header: {
+          "content-type": "json"
+        },
+        success: function (res) {
+          console.log(res);
+          var shopList = res.data.body;
+          if (shopList == null || shopList == undefined || shopList.length == 0){
+            wx.showToast({
+              title: '查询不到此商家',
+              image: '/img/search_shop/fault.png',
+              duration: 1000,
+            })
+            return;
+          }else{
+            that.setData({
+              shopList: shopList
+            })
+          }
+        },
+        fail:function(res){
+          wx.showToast({
+            title: '网络错误',
+            icon : 'loading'
+          })
+        },
+        complete:function(res){
+          wx.hideLoading();
+        }
+      })
+    }
+    
+  },
+  //搜索按钮
+  search_tap : function(e){
+    var that = this;
+    that.search_fun();
+  },
+  //搜索确认
+  search_confirm : function(e){
+    var that = this;
+    that.search_fun();
+  },
+  //跳转店铺详情
+  shop_detail : function(e){
+    console.log(e.currentTarget.dataset.shopid);
+    var shopid = e.currentTarget.dataset.shopid
+    wx.navigateTo({
+      url: '/pages/shop_detail/shop_detail?shopid='+ shopid,
+    })
+  },
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+  
+  },
+
+ 
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+  
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+  
+  },
+
+  
+})

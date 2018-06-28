@@ -1,0 +1,128 @@
+/* pages/about_wx/about_wx.wxss */
+
+.about_wx {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about_top {
+  width: 100%;
+  height: 300rpx;
+  margin-top: 16rpx;
+}
+
+.about_top image {
+  width: 100%;
+  height: 100%;
+}
+
+.about_title {
+  width: 100%;
+  height: 148rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #ff5d00;
+  font-weight: bold;
+}
+
+.about_title image {
+  width: 78rpx;
+  height: 3rpx;
+}
+
+.about_present {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about_text {
+  width: 70%;
+  font-size: 26rpx;
+}
+
+.map_about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx;
+  font-size: 30rpx;
+}
+
+.wx_img {
+  width: 100%;
+  height: 300rpx;
+  margin-top: 60rpx;
+}
+
+.wx_img image {
+  width: 100%;
+  height: 100%;
+}
+
+.jieshao {
+  width: 550rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.jieshao view {
+  margin: 0 auto 0;
+  width: 550rpx;
+  height: 80rpx;
+  white-space: pre-wrap;
+  font-size: 26rpx;
+}
+
+.about_bto {
+  width: 100%;
+  height: 316rpx;
+  position: relative;
+}
+
+.about_btoimg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.about_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_btotxt {
+  width: 600rpx;
+  height: 300rpx;
+  position: absolute;
+  top: 0;
+}
+
+.about_lianxi {
+  width: 343rpx;
+  margin: 60rpx auto 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #fff;
+}
+
+.about_lianxi image {
+  width: 78rpx;
+  height: 4rpx;
+}
+
+.about_phone{
+  width:100%;
+  height:65rpx;
+  color:#fff;
+  font-size: 26rpx;
+}
+

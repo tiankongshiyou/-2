@@ -1,0 +1,97 @@
+.container{
+  background-color: #f3f5f7;
+}
+.container_background{
+  background-color: #fff;
+  width: 100%;
+  margin-top: 20rpx;
+}
+.impress_all {
+  width: 702rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e6e6e6;
+  margin-left: 24rpx;
+}
+
+/* 头像 */
+.impress-left {
+  margin-right:16rpx; 
+}
+.avatar {
+  width: 92rpx;
+  height: 92rpx;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-top: 24rpx;
+}
+
+/* 评论 */
+.impress-right {
+  background-color: #fff;
+}
+.comment_nametime{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 49rpx;
+}
+
+.nick_name {
+  background-color: #fff;
+  font-size: 30rpx;
+  color: #333;
+  font-family: MicrosoftYaHei;
+}
+.comment_time {
+  color: #808080;
+  font-size: 26rpx;
+}
+
+/* 评论内容 */
+.comment_dec {
+  background-color: #fff;
+  font-size: 26rpx;
+  color: #333;
+  margin-top: 36rpx;
+}
+
+.comment_img {
+  margin-top: 24rpx;
+  margin-bottom: 26rpx;
+}
+
+.img_details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img {
+  width: 194rpx;
+  height: 180rpx;
+  background-color: #ccc;
+}
+/* 店铺 */
+.comments_shop{
+  width: 596rpx;
+  height: 105rpx;
+  background: #f3f5f7;
+  margin-bottom: 26rpx;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.comments_shop_img{
+  background: #999;
+  width: 86rpx;
+  height: 76rpx;
+  border-radius: 8rpx;
+  margin-left: 24rpx;
+}
+.comments_shop_txt{
+  margin-left: 24rpx;
+  font-size: 30rpx;
+  color: #333;
+}

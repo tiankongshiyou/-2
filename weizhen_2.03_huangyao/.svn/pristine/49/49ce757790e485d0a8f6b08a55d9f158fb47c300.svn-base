@@ -1,0 +1,49 @@
+<view wx:if='{{slide.length !== " " || slide.length !== null}}'>
+  <block wx:for='{{slide}}' wx:key="key">
+    <view class='address'>
+      <view class='location'>
+        <view class='user_info'>
+          <text class='name'>{{item.shr}}</text>
+          <text class='cellphone'>{{item.sfrtel}}</text>
+        </view>
+        <view class='user_address'>{{item.province}} {{item.city}} {{item.area}} {{item.sfrAddr}}</view>
+      </view>
+      <view class='site'>
+        <view class='default' bindtap='tacitlyApprove' data-default="{{item.isDefault}}" data-id="{{item.id}}">
+          <image wx:if='{{item.isDefault == 1}}' src='/img/basic_data/not-Selected@2x.png'></image>
+          <image wx:elif='{{item.isDefault == 0 }}' src='/img/basic_data/pitch-on1@2x.png'></image>
+          <text class='{{item.isDefault == 1? "" : "on" }}'>默认地址</text>
+        </view>
+        <view class='option'>
+          <view class='editor' bindtap='bluepencil' data-func='2' data-id='{{index}}' data-delete='{{item.id}}' data-default="{{item.isDefault}}">
+            <image src='/img/basic_data/delete@2x.png'></image>
+            <text>编辑</text>
+          </view>
+          <view class='delete' bindtap="showDialogBtn" data-id='{{item.id}}'>
+            <image src='/img/basic_data/editor2@2x.png'></image>
+            <text>删除</text>
+          </view>
+        </view>
+      </view>
+    </view>
+   
+  </block>
+   <!-- 新增收货地址按钮start -->
+    <view wx:for='{{slide}}' class='submit' bindtap='submit'>
+      <button>新增收货地址</button>
+    </view>
+</view>
+
+<!-- 新增收货地址按钮end -->
+
+<!-- 没有收货地址的状态 -->
+<view class='fan' wx:elseif='{{slide.length == " " || slide.length == null}}'>
+  <view class='space'></view>
+  <view class='prompt'>
+    <image src='/img/basic_data/no-receiving-address1.png'></image>
+    <text>暂无收货地址</text>
+  </view>
+  <view class='submit_a' bindtap='submit'>
+    <button>+新增收货地址</button>
+  </view>
+</view>

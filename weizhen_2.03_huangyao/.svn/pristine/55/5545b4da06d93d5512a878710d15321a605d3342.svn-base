@@ -1,0 +1,110 @@
+page {
+  font-size: 30rpx;
+  background: #f3f5f7;
+}
+
+.enter {
+  background: #fff;
+  margin-top: 16rpx;
+  display: flex;
+  flex-direction: column;
+}
+/* 立即成为商家start */
+.aim_seller {
+  height: 374rpx;
+  display: flex;
+  flex-direction: column;
+  margin: 0 42rpx;
+}
+
+.business {
+  border-bottom: 1rpx solid #e6e6e6;
+}
+
+.flow_path {
+  margin-top: 64rpx;
+  margin-bottom: 32rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flow_path .path {
+  width: 573rpx;
+  height: 22rpx;
+}
+
+.procedure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.material_left {
+  width: 33.33%;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.material_center {
+  width: 33.33%;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.material_right {
+  width: 33.33%;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.material_picture {
+  width: 39rpx;
+  height: 39rpx;
+}
+
+.material_script {
+  color: #808080;
+  margin-left: 10rpx;
+}
+
+.submit {
+  margin-top: 64rpx;
+  margin-bottom: 64rpx;
+}
+
+.submit button {
+  width: 359rpx;
+  height: 88rpx;
+  color: #fff;
+  font-size: 34rpx;
+  border-radius: 8rpx;
+  background: #ff5d00;
+}
+
+/* 立即成为商家end */
+
+/* 立即成为准商家start */
+.flow {
+  margin-top: 64rpx;
+  margin-bottom: 32rpx;
+  display: flex;
+  align-items: center;
+}
+
+.flow .auditing {
+  width: 321rpx;
+  height: 22rpx;
+  margin-left: 52rpx;
+}
+
+.procedure_seller {
+  width: 424rpx;
+  height: 40rpx;
+}
+/* 立即成为准商家end */

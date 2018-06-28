@@ -1,0 +1,66 @@
+<view class='container'>
+  <view class='container_background'>
+      
+      <view class='impress_all'>
+
+<!-- 头像 -->
+        <view class='impress-left'>
+          <image src='{{item.wx_img}}' class='avatar'></image>
+        </view>
+
+        <view class='impress-right'>
+          <view class='comment_nametime'>
+            <view class='nick_name' style='color:#71777d'>{{item.wx_nc}}Abby smile</view>
+            <view class='comment_time' style='color:#b7bbbf'>{{item.createTime}}2017年5月1日</view>
+          </view>
+
+          <!-- 评论 -->
+          <view class='comment_dec'>{{item.plText}}啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</view>
+          <view class='comment_img'>
+            <view class='img_details'>
+               <image src='{{item.pltp}}' class='img'></image>
+            </view>
+          </view>
+
+          <!-- 店铺 -->
+          <view class='comments_shop'>
+            <image src='' class='comments_shop_img'></image>
+            <view class='comments_shop_txt'>蜡笔小新旗舰店</view>
+          </view>
+        </view>
+
+      </view>
+
+      <view class='impress_all'>
+
+
+        <view class='impress-left'>
+          <image src='' class='avatar'></image>
+        </view>
+
+        <view class='impress-right'>
+          <view class='comment_nametime'>
+            <view class='nick_name' style='color:#71777d'>Abby smile</view>
+            <view class='comment_time' style='color:#b7bbbf'>2017年5月1日</view>
+          </view>
+
+          <view class='comment_dec'>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</view>
+          <view class='comment_img'>
+            <view class='img_details'>
+               <image src='' class='img'></image>
+            </view>
+          </view>
+
+          <view class='comments_shop'>
+            <image src='' class='comments_shop_img'></image>
+            <view class='comments_shop_txt'>蜡笔小新旗舰店</view>
+          </view>
+        </view>
+
+      </view>
+  </view>
+</view>
+
+<!-- <view class='container' wx:if="{{mycomments.length <= 0}}">
+    暂无评论
+</view> -->

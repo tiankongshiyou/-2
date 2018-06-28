@@ -1,0 +1,156 @@
+page {
+  background-color: #f3f5f7;
+  height:100%;
+}
+.fan{
+  width:100%;
+  height:1900rpx;
+  background: #fff;
+  z-index:2;
+}
+.address {
+  background: #fff;
+  margin-top: 16rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  margin: 0 24rpx;
+  padding-bottom: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name, .cellphone {
+  width: 50%;
+  height: 68rpx;
+  line-height: 68rpx;
+  color: #333;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+
+.user_address {
+  color: #808080;
+  font-size: 30rpx;
+}
+
+.site {
+  height: 100rpx;
+  margin: 0 24rpx;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1rpx solid #e6e6e6;
+}
+
+.default {
+  width: 60%;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+}
+
+.default image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.default  text {
+  color: #808080;
+  margin-left: 12rpx;
+}
+
+.default .on {
+  color: #ff5d00;
+}
+
+.option {
+  width: 40%;
+  display: flex;
+}
+
+.editor, .delete {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 26rpx;
+}
+
+.editor image, .delete image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.editor text, .delete text {
+  color: #808080;
+  margin-left: 12rpx;
+}
+/* 新增收货地址按钮start */
+.submit {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.submit button {
+  width: 100%;
+  height: 98rpx;
+  line-height: 98rpx;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  font-size: 34rpx;
+  background: #ff5d00;
+}
+/* 新增收货地址按钮end */
+.space {
+  width: 100%;
+  height: 16rpx;
+  background-color: #f3f5f7;
+}
+
+.prompt {
+  height: 544rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.prompt image {
+  width: 266rpx;
+  height: 257rpx;
+}
+
+.prompt text {
+  height: 120rpx;
+  line-height: 120rpx;
+  color: #433333;
+  font-size: 34rpx;
+}
+
+/* 新增收货地址按钮start */
+.submit_a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit_a button {
+  width: 702rpx;
+  height: 88rpx;
+  color: #fff;
+  font-size: 34rpx;
+  border-radius: 16rpx;
+  background-color: #ff5d00;
+}
+/* 新增收货地址按钮end */

@@ -1,0 +1,55 @@
+var app = getApp();
+Page({
+  data: {
+    currentTab: 0
+  },
+
+  onLoad: function (options) {
+    console.log(options)
+    var that = this
+    var openid = app.globalData.userRole.wxOpenId
+    wx.request({
+      url: "http://192.168.1.122:8080/weizhen" + '/wx/shops/getGroupBylike',
+      method: "post",
+      dataType: "json",
+      data: {
+        openid: openid,
+        shopName: "cc"
+      },
+      success: function (res) {
+        console.log(res,"----------------------")
+        var wxOpenId = app.globalData.userRole.wxOpenId
+        if (res.data.code == 200) {
+          console.log(res.data.body)
+          that.setData({
+            myteam: res.data.body,
+            wxOpenId: wxOpenId
+          })
+        }
+      },
+      fail: function (err) {
+        console.log(err)
+      }
+    }) 
+  },
+
+
+  //滑动切换
+  swiperTab: function (e) {
+    var that = this;
+    that.setData({
+      currentTab: e.detail.current
+    });
+  },
+  //点击切换
+  clickTab: function (e) {
+    var that = this;
+    if (this.data.currentTab === e.target.dataset.current) {
+      return false;
+    } else {
+      that.setData({
+        currentTab: e.target.dataset.current
+      })
+    }
+  }
+})

@@ -1,0 +1,39 @@
+/**index.wxss**/
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #fff, #d9dde1);
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500rpx;
+  height: 500rpx;
+  margin-top: 300rpx;
+  position: relative;
+}
+
+.gotoIndex {
+  margin-top: 40rpx;
+  background: #fff;
+  color: #666;
+  width: 300rpx;
+  height: 300rpx;
+  text-align: center;
+  line-height: 300rpx;
+  font-size: 40rpx;
+  box-shadow: 4rpx 4rpx 4rpx #d9dde1;
+}
+
+.gotoIndex::after {
+  border: none;
+}
+

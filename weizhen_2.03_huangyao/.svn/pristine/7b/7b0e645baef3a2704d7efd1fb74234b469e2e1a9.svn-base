@@ -1,0 +1,11 @@
+<map id='map' longitude='{{longitude}}' latitude='{{latitude}}' scale='{{scale}}' controls='{{controls}}' bindcontroltap='controltap' bindmarkertap="markertap" markers='{{markers}}' circles='{{circles}}' bindregionchange='region' show-location>
+  <cover-image src='/img/around/dinw3.png' class='position' bindtap='position'></cover-image>
+  <cover-image src='/img/around/refurbish1.png' class='reload' bindtap='reload'></cover-image>
+  <cover-image src='/img/center.png' class='center'></cover-image>
+  <cover-view class='goto_search'>
+    <cover-view class='search'>
+      <cover-image src='/img/around/search.png' style='width:36rpx;height:36rpx;margin-left:220rpx;'></cover-image>
+      <cover-view style='font-size:30rpx;color:#71777d;margin-left:10rpx;' bindtap='goto_search'>搜索您喜爱的商家</cover-view>
+    </cover-view>
+  </cover-view>
+</map>

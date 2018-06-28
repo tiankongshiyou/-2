@@ -1,0 +1,6 @@
+<view class='container'>
+  <view class='box'>
+    <image src='/img/withdrawal_result/勾@2x.png' style='width:80rpx;height:80rpx;margin-top:162rpx'></image>
+    <view  class='txt'>提现申请已提交，等待处理~</view>
+  </view>
+</view>

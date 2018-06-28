@@ -1,0 +1,95 @@
+page {
+  background: #f3f5f7;
+}
+
+/* 头像start */
+
+.head_portrait {
+  width: 100%;
+  height: 340rpx;
+  margin-top: 16rpx;
+}
+
+.portrait_img {
+  width: 750rpx;
+  height: 340rpx;
+  position: absolute;
+  top: 16rpx;
+  left: 0;
+}
+
+.ification {
+  width: 100%;
+  height: 340rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ification image {
+  width: 128rpx;
+  height: 128rpx;
+  z-index: 22;
+  margin-top: 42rpx;
+  border-radius: 60rpx;
+  box-shadow: 1rpx 1rpx 6rpx rgba(250, 252, 254, 0.16);
+}
+
+.ification text {
+  color: #fff;
+  z-index: 22;
+  font-size: 30rpx;
+  margin-top: 34rpx;
+}
+
+/* 头像end */
+
+/* 入驻二维码start */
+
+.scavenging {
+  width: 702rpx;
+  height: 792rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  position: absolute;
+  top: 283rpx;
+  left: 24rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.scan_enter {
+  color: #4d4d4d;
+  font-size: 30rpx;
+  margin-top: 100rpx;
+}
+
+.scavenging image {
+  width: 433rpx;
+  height: 433rpx;
+  margin-top: 42rpx;
+}
+
+.because_of {
+  color: #808080;
+  font-size: 26rpx;
+  margin-top: 42rpx;
+}
+
+/* 入驻二维码end */
+
+.designate {
+  width: 100%;
+  height: 51rpx;
+  position: absolute;
+  bottom: 36rpx;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.designate image {
+  width: 255rpx;
+  height: 51rpx;
+}

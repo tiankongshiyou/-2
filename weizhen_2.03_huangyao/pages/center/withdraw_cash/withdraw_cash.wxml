@@ -1,0 +1,65 @@
+<!--pages/center/withdraw_cash/withdraw_cash.wxml-->
+<view class='withdraw_cash'>
+  <!-- 提現狀態 -->
+  <view class='withdraw_top'>
+    <view class='withdraw_img'>
+
+      <view class='withdraw_view'>
+        <view class='withdraw_lei'>
+          <text>提现类型</text>
+          <!-- 账户 -->
+          <view class='withdraw_zh'>
+            <text>到账钱包：</text>
+            <view class='withdraw_zhbtn'>
+              <text>微信钱包</text>
+              <image src='/img/withdraw_cash/wechat@2x.png'></image>
+            </view>
+
+          </view>
+        </view>
+        <block wx:for="{{model}}" wx:key="key">
+          <view class='with_text' bindtap='selectClick' id="{{index}}">
+            <text>{{item.value}}</text>
+            <image wx:if="{{item.selectImage == 1001}}" src='/img/withdraw_cash/danxuan@2x.png'></image>
+            <image wx:else if="{{item.selectImage == 1002}}" src='/img/withdraw_cash/weixuan@2x.png'></image>
+
+          </view>
+        </block>
+        <!-- <view class='with_text'>
+          <block wx:for="{{model}}">
+            <image wx:if="{{item.selectImage == true}}" src='/img/withdraw_cash/danxuan@2x.png'></image>
+            <image wx:else if="{{item.selectImage == false}}" src='/img/withdraw_cash/weixuan@2x.png'></image>
+          </block>
+          <text>粉丝收益+销售业绩</text>
+        </view> -->
+      </view>
+    </view>
+  </view>
+  <!-- 提现 -->
+
+  <view class='withdraw_money'>
+    <view class='withdraw_cont'>
+
+      <!-- 提现金额 -->
+      <view class='withdraw_quota'>
+        <text style='color:#ff5d00;'>提现金额：</text>
+        <view class='withdraw_input'>
+          <text>￥</text>
+          <input placeholder='输入提现金额' placeholder-style='color:#b7bbbf;' type='number'></input>
+        </view>
+      </view>
+      <!-- 账户余额 -->
+      <view class='withdraw_account' style='font-size:26rpx;border:none'>
+        <text>当前可提现余额200.33元 ,</text>
+        <view class='withdraw_zhbtn'>
+          <text style='color:#ff5d00; margin-left:10rpx;'>全部提现</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部 -->
+  <view class='btn' bindtap='withdrawal_result'>
+    <text>提现</text>
+  </view>
+</view>

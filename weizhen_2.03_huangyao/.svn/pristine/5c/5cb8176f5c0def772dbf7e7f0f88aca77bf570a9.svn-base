@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="490db56c-ff5f-427a-b2a9-8fc004ab54d1" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/pages/business/business.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/business/business.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/business/business.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/business/business.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/shop_detail/shop_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/shop_detail/shop_detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/shop_detail/shop_detail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/shop_detail/shop_detail.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/shop_detail/shop_detail.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/shop_detail/shop_detail.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readMe" beforeDir="false" afterPath="$PROJECT_DIR$/readMe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/port.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/port.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="949">
+              <caret line="75" column="57" selection-start-line="75" selection-start-column="57" selection-end-line="75" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="business.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/business/business.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4172">
+              <caret line="269" column="6" lean-forward="true" selection-start-line="269" selection-start-column="6" selection-end-line="269" selection-end-column="6" />
+              <folding>
+                <element signature="e#844#1252#0" />
+                <element signature="e#1288#1690#0" />
+                <element signature="e#1753#2011#0" />
+                <element signature="e#2065#2605#0" />
+                <element signature="e#3409#3518#0" />
+                <element signature="e#3568#3649#0" />
+                <element signature="e#3694#3782#0" />
+                <element signature="e#3818#3868#0" />
+                <element signature="e#3904#4530#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="port.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/port.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="around.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/around/around.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="142" column="22" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>userInfoReadyCallback</find>
+      <find>userRole</find>
+      <find>app</find>
+      <find>cur_class</find>
+      <find>QQMapWX</find>
+      <find>addr</find>
+      <find>cdnaddr</find>
+      <find>webviewId</find>
+      <find>region</find>
+      <find>new_hot</find>
+      <find>goto</find>
+      <find>bindtap='goto'</find>
+      <find>classes</find>
+      <find>jumpOtherUrl</find>
+      <find>wx/system/getimg</find>
+      <find>shop_detail</find>
+      <find>大家都在</find>
+      <find>console</find>
+      <find>goods</find>
+      <find>order_center</find>
+      <find>shop.png</find>
+      <find>bindRegionChange</find>
+      <find>app.util.</find>
+      <find>getTrueLocation</find>
+      <find>获取店铺信息</find>
+      <find>.goods {</find>
+      <find>curPage</find>
+      <find>queryShops</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>bindtap='jumpOtherUrl'</replace>
+    </replaceStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pages/business/business.wxml" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pages/demo/demo.js" />
+        <option value="$PROJECT_DIR$/pages/autho/autho.js" />
+        <option value="$PROJECT_DIR$/pages/index/index.js" />
+        <option value="$PROJECT_DIR$/pages/shop_detail/shop_detail.wxml" />
+        <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/utils/util.js" />
+        <option value="$PROJECT_DIR$/utils/log.js" />
+        <option value="$PROJECT_DIR$/utils/getLocation.js" />
+        <option value="$PROJECT_DIR$/pages/business/business.wxss" />
+        <option value="$PROJECT_DIR$/readMe" />
+        <option value="$PROJECT_DIR$/pages/around/around.wxml" />
+        <option value="$PROJECT_DIR$/pages/auth/auth.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/pages/around/around.js" />
+        <option value="$PROJECT_DIR$/pages/business/business.wxml" />
+        <option value="$PROJECT_DIR$/pages/shop_detail/shop_detail.js" />
+        <option value="$PROJECT_DIR$/pages/shop_detail/shop_detail.wxss" />
+        <option value="$PROJECT_DIR$/utils/port.js" />
+        <option value="$PROJECT_DIR$/pages/business/business.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="439" />
+    <option name="y" value="237" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="weizhen_version_2.0.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weizhen_version_2.0.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weizhen_version_2.0.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weizhen_version_2.0.0" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weizhen_version_2.0.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weizhen_version_2.0.0" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../member_mini_app_huachen" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mini\weizhen_mini_mall\pages" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\mini\weizhen_version_2.0.0" />
+          <option name="myCopyRoot" value="D:\mini\weizhen_version_2.0.0" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\mini\weizhen_version_2.0.0" />
+          <option name="myCopyRoot" value="D:\mini\weizhen_version_2.0.0" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="490db56c-ff5f-427a-b2a9-8fc004ab54d1" name="Default" comment="" />
+      <created>1527727892213</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527727892213</updated>
+      <workItem from="1527727893521" duration="1133000" />
+      <workItem from="1527731728358" duration="19246000" />
+      <workItem from="1527813479236" duration="21566000" />
+      <workItem from="1527899690444" duration="9664000" />
+      <workItem from="1528075135208" duration="4144000" />
+      <workItem from="1528159372331" duration="1064000" />
+      <workItem from="1528161989616" duration="4802000" />
+      <workItem from="1528192462614" duration="1449000" />
+      <workItem from="1528243691755" duration="13814000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="76882000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945593" visible="true" weight="0.1792" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="right" id="Structure" order="3" sideWeight="0.5005441" side_tool="true" visible="true" weight="0.1312" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945593" visible="true" weight="0.18613334" />
+      <window_info active="true" anchor="right" id="Structure" order="3" sideWeight="0.5005441" side_tool="true" visible="true" weight="0.13173333" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pages/index/index.js" />
+    <entry file="file://$PROJECT_DIR$/pages/intercalate/intercalate.wxss" />
+    <entry file="file://$PROJECT_DIR$/pages/newly_increased/newly_increased.wxss" />
+    <entry file="file://$PROJECT_DIR$/pages/newly_increased/newly_increased.wxml" />
+    <entry file="file://$PROJECT_DIR$/pages/newly_increased/newly_increased.json" />
+    <entry file="file://$PROJECT_DIR$/pages/take_delivery/take_delivery.js" />
+    <entry file="file://$PROJECT_DIR$/pages/take_delivery/take_delivery.json" />
+    <entry file="file://$PROJECT_DIR$/pages/order_center/take_delivery/take_delivery.wxml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/order_center/take_delivery/take_delivery.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/order_center/take_delivery/take_delivery.wxss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/order_center/take_delivery/take_delivery.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/replace/replace.wxss" />
+    <entry file="file://$PROJECT_DIR$/pages/replace/replace.json" />
+    <entry file="file://$PROJECT_DIR$/pages/replace/replace.js" />
+    <entry file="file://$PROJECT_DIR$/pages/replace/replace.wxml" />
+    <entry file="file://$PROJECT_DIR$/pages/not_have/not_have.wxml" />
+    <entry file="file://$PROJECT_DIR$/pages/intercalate/intercalate.wxml" />
+    <entry file="file://$PROJECT_DIR$/pages/intercalate/intercalate.json" />
+    <entry file="file://$PROJECT_DIR$/pages/intercalate/intercalate.js" />
+    <entry file="file://$PROJECT_DIR$/pages/new_or_hot/new_or_hot.json" />
+    <entry file="file://$PROJECT_DIR$/pages/new_or_hot/new_or_hot.wxss" />
+    <entry file="file://$PROJECT_DIR$/pages/new_or_hot/new_or_hot.js" />
+    <entry file="file://$PROJECT_DIR$/pages/new_or_hot/new_or_hot.wxml" />
+    <entry file="file://$PROJECT_DIR$/pages/goods/goods.wxss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/goods/goods.wxml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/shop_detail/shop_comments/shop_comments.wxml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/pullDownRefresh.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/toChineseNum.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/qqmap-wx-jssdk.js" />
+    <entry file="file://$PROJECT_DIR$/utils/getUserInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="41" column="41" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.config.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/modalBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/log.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/business/business.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readMe">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="76" column="29" lean-forward="true" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/getLocation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/auth/auth.wxml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/auth/auth.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/auth/auth.wxss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/auth/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="88" column="60" lean-forward="true" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/around/around.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="194" selection-start-column="178" selection-end-column="194" />
+          <folding>
+            <element signature="n#style#0;n#cover-image#0;n#cover-view#0;n#cover-view#0;n#map#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#cover-view#0;n#cover-view#0;n#cover-view#0;n#map#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/business/business.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/shop_detail/shop_detail.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="193" column="14" lean-forward="true" selection-start-line="193" selection-start-column="14" selection-end-line="193" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/shop_detail/shop_detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-267">
+          <caret line="169" column="31" selection-start-line="169" selection-start-column="31" selection-end-line="169" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/shop_detail/shop_detail.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="949">
+          <caret line="75" column="57" selection-start-line="75" selection-start-column="57" selection-end-line="75" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/port.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/around/around.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="142" column="22" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/business/business.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4172">
+          <caret line="269" column="6" lean-forward="true" selection-start-line="269" selection-start-column="6" selection-end-line="269" selection-end-column="6" />
+          <folding>
+            <element signature="e#844#1252#0" />
+            <element signature="e#1288#1690#0" />
+            <element signature="e#1753#2011#0" />
+            <element signature="e#2065#2605#0" />
+            <element signature="e#3409#3518#0" />
+            <element signature="e#3568#3649#0" />
+            <element signature="e#3694#3782#0" />
+            <element signature="e#3818#3868#0" />
+            <element signature="e#3904#4530#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

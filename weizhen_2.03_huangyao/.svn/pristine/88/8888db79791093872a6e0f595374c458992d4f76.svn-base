@@ -1,0 +1,25 @@
+<view class='container'>
+  <scroll-view class='main' scroll-y="true">
+    <view class='section header'>
+      <view class='search_bar'>
+        <view class='search_input'>
+          <input class='input' placeholder='输入您喜爱的店铺' bindinput='search_shops' bindconfirm='search_confirm'></input>
+        </view>
+        <view class='search_text' bindtap='search_tap'>搜索</view>
+      </view>
+    </view>
+
+    <block wx:for="{{shopList}}" wx:key="*shopList">
+      <view class='section shops_detail'>
+        <image src='{{cdnaddr}}{{item.shopPic}}' class='shop_img' data-shopid='{{item.id}}' bindtap='shop_detail'>
+        </image>
+        <view class='shop_bottom'>
+          <view class='shop_name'>{{item.shopName}}</view>
+          <view class='shop_coupon'>
+            <text class='coupon'>领券更优惠</text>
+          </view>
+        </view>
+      </view>
+      </block>
+  </scroll-view>
+</view>

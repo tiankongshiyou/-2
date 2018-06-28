@@ -1,0 +1,57 @@
+page {
+  font-size: 30rpx;
+  background: #f3f5f7;
+}
+
+.withdraw_cash {
+  background: #fff;
+  margin-top: 16rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.password {
+  height: 100rpx;
+  margin: 0 24rpx;
+  display: flex;
+  align-items: center;
+}
+
+.new_password {
+  border-top: 1rpx solid #e6e6e6;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+
+.password text {
+  width: 160rpx;
+  color: #333;
+}
+
+.password input {
+  width: 100%;
+  color: #b7bbbf;
+  margin-left: 36rpx;
+}
+
+.prompt_colcor {
+  color: #b7bbbf;
+}
+
+/* 提交按钮start */
+.submit {
+  margin-top: 230rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit button {
+  width: 702rpx;
+  height: 88rpx;
+  color: #fff;
+  font-size: 34rpx;
+  background: #ff5d00;
+  border-radius: 16rpx;
+}
+
+/* 提交按钮end */

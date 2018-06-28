@@ -1,0 +1,101 @@
+page {
+  color: #333;
+  font-size: 30rpx;
+  background: #f3f5f7;
+}
+
+/* 头像start */
+.must {
+  height: 180rpx;
+  background: #fff;
+  padding: 0 24rpx;
+  margin-top: 16rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head_sculpture {
+  width: 60%;
+}
+
+.user_identity {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.user_identity .head_portrait {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  margin-right: 60rpx;
+}
+
+.right_arrow {
+  width: 18rpx;
+  height: 30rpx;
+}
+/* 头像end */
+
+/* 商家信息start */
+.information {
+  background: #fff;
+  margin-top: 16rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.specific {
+  height: 100rpx;
+  margin: 0 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* 双边框线 */
+.crewel {
+  border-top: 1rpx solid #e6e6e6;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+
+/* 单边框线 */
+.monoline {
+    border-bottom: 1rpx solid #e6e6e6;
+}
+
+.particulars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b7bbbf;
+}
+
+.reveal {
+  margin-right: 56rpx;
+}
+
+.revise {
+  margin-right: 36rpx;
+}
+/* 商家信息end */
+
+/* 修改充值start */
+.withdraw {
+  background: #fff;
+  margin-top: 16rpx;
+}
+input{
+ margin-right:56rpx;
+ text-align:right;
+}
+/* 修改充值end */
+.inputs{
+  display: flex;
+  justify-content: flex-end;
+  color: #b7bbbf;
+ 
+}

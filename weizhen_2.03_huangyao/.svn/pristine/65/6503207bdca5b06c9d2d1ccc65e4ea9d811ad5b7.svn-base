@@ -1,0 +1,35 @@
+<!--pages/micro_powder/micro_powder.wxml-->
+<!-- 顶部搜索 -->
+<view class='input_team'>
+  <view class='searchinput'>
+    <view class='inputvlwe'>
+      <input bindinput='bindinput' bindconfirm='bindconfirm' placeholder='微阵联盟抢新礼品' style='height:66rpx;' placeholder-style='color: #b7b7b7;'></input>
+      <image src='/img/marketing_activity/search@2x.png'></image>
+    </view>
+    <view bindtap='search_team'>
+      <text style='color:#ff5d00;font-size:30rpx;'>搜索</text>
+    </view>
+  </view>
+</view>
+<view class='micro_powder'>
+  <block wx:for="{{micro_powder}}" wx:key="key" wx:if="{{micro_powder == null || micro_powder == undefined}}">
+    <view class='user_powder'>
+      <view class='user_sort'>
+        <view class='user_img'>
+          <image src='{{item.wxImg}}' style='width:100%;height:100%;background:skyblue'></image>
+        </view>
+        <view>{{item.wxNc}}</view>
+      </view>
+    </view>
+  </block>
+  <view class='no_powder'>
+    <text>暂无粉丝</text>
+  </view>
+
+
+
+  <view class='micro_btn' bindtap='bindtap'>
+    <text>规则说明</text>
+    <image src='/img/center/right_w.png' style='width:20rpx;margin-left:20rpx;height:35rpx;'></image>
+  </view>
+</view>

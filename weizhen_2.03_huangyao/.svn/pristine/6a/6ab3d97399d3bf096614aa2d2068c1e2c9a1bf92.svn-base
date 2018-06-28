@@ -1,0 +1,46 @@
+page {
+  background-color: #fff;
+}
+
+.space {
+  width: 100%;
+  height: 16rpx;
+  background-color: #f3f5f7;
+}
+
+.prompt {
+  height: 544rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.prompt image {
+  width: 266rpx;
+  height: 257rpx;
+}
+
+.prompt text {
+  height: 120rpx;
+  line-height: 120rpx;
+  color: #433333;
+  font-size: 34rpx;
+}
+
+/* 新增收货地址按钮start */
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit button {
+  width: 702rpx;
+  height: 88rpx;
+  color: #fff;
+  font-size: 34rpx;
+  border-radius: 16rpx;
+  background-color: #ff5d00;
+}
+/* 新增收货地址按钮end */

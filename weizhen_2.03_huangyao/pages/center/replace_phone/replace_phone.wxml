@@ -1,0 +1,7 @@
+<view class='renewal'>
+  <text class='contact'>联系电话</text>
+  <text class='telephone'>1519724585</text>
+</view>
+<view class='submit' bindtap='submit'>
+  <button>更换手机号码</button>
+</view>

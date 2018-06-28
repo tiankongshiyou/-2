@@ -1,0 +1,14 @@
+<scroll-view class='height_bg' scroll-y="true" bindscroll="onScroll" bindscrolltolower="loadMore" lower-threshold="20">
+<block wx:for="{{shopList}}" wx:key="*shopList">
+  <view class='section shops_detail' style='margin-bottom:30rpx;' bindtap='jumpOtherUrl' data-id='{{item.id}}'>
+    <image wx:if="{{item.shopPic && item.shopPic != null}}" class='shop_img' src='{{image_prefix_host}}{{item.shopPic}}'></image>
+    <image wx:else src='/images/blank.png'></image>
+    <view class='shop_bottom'>
+      <view class='shop_name' style='color:#4D4D4D;font-weight:bold'>{{item.shopName}}</view>
+      <view class='shop_coupon'>
+        <image src='/test_img/business/coupon.png' class='coupon'>领券更优惠</image>
+      </view>
+    </view>
+  </view>
+  </block>
+</scroll-view>

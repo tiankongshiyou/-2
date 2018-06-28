@@ -1,0 +1,58 @@
+/* pages/order_details/order_details.wxss */
+@import '../return_success/return_success.wxss';
+/* @import '../order_details/order_details.wxss'; */
+.order_deng{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.order_dengtop{
+  width: 100%;
+  height: 195rpx;
+  position: relative;
+  margin-bottom: 16rpx;
+}
+.top_text{
+  height:50rpx;
+  top:44rpx;
+  font-size: 37rpx;
+}
+.top_texttwo{
+  width:100%;
+  height:113rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+  position: absolute;
+  bottom: 0;
+}
+.deng_btn{
+  width:100%;
+  height:95rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+}
+.deng_gong{
+  margin-left:24rpx;
+
+}
+.deng_texttwo{
+  color:#e62318;
+}
+.deng_return{
+  width:238rpx;
+  height: 95rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff5d00;
+  color:#fff;
+}

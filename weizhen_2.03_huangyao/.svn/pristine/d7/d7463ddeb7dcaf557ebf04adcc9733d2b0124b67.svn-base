@@ -1,0 +1,82 @@
+/* pages/center/myshop_manage/myshop_manage.wxss */
+.myshop_manage{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.myshop_img{
+  width: 100%;
+  height:340rpx;
+  position: relative;
+}
+.myshop_img image{
+  width: 100%;
+  height:340rpx;
+}
+.myshop_box{
+  width: 100%;
+  height:230rpx;
+  position: absolute;
+  top:0;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+
+}
+.myshop_box image{
+  width: 120rpx;
+  height:120rpx;
+  border-radius: 50%;
+  margin:40rpx auto 0;
+}
+.myshop_cont{
+  width: 100%;
+  height:680rpx;
+  position: absolute;
+  bottom: 260rpx;
+  display: flex;
+  justify-content: center;
+}
+.myshop_center{
+  width: 680rpx;
+  height:680rpx;
+  background: #fff;
+  border-radius: 16rpx;
+  display: flex;
+  flex-direction: column;
+ padding-top: 42rpx;
+
+}
+.myshop_guan{
+  width: 618rpx;
+  display: flex;
+  justify-content: space-between;
+   margin:0 auto 56rpx;
+}
+.myshop_fang image{
+  width: 100%;
+  height:100%;
+}
+.myshop_fang{
+  width:168rpx;
+  height:168rpx;
+  
+}
+.myshop_btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.myshop_btn image{
+  position: absolute;
+  bottom: 50rpx;
+  width: 161rpx;
+  height:38rpx;
+  
+}
+
+

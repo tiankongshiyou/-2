@@ -1,0 +1,85 @@
+page {
+  background-color: #f3f5f7;
+}
+
+.address {
+  background: #fff;
+  margin-top: 16rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  height: 200rpx;
+  margin: 0 24rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name, .cellphone {
+  width: 50%;
+  height: 68rpx;
+  line-height: 68rpx;
+  color: #333;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+
+.user_address {
+  color: #808080;
+  font-size: 30rpx;
+}
+
+.site {
+  height: 100rpx;
+  margin: 0 24rpx;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1rpx solid #e6e6e6;
+}
+
+.default {
+  width: 60%;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+}
+
+.default image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.default  text {
+  color: #808080;
+  margin-left: 12rpx;
+}
+
+.option {
+  width: 40%;
+  display: flex;
+}
+
+.editor, .delete {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 26rpx;
+}
+
+.editor image, .delete image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.editor text, .delete text {
+  color: #808080;
+  margin-left: 12rpx;
+}

@@ -1,0 +1,150 @@
+<wxs src="./shop_detail.wxs" module="tools" />
+<view class='container'>
+  <!--分享二维码/商铺详情  -->
+  <view class='share_page' wx:if="{{show_share}}">
+    <view class='share_box'>
+      <image src='{{cdnaddr}}{{shop_detail.shopPic}}' class='share_img'></image>
+      <image src='{{cdnaddr}}{{two_d}}' class='share_ma'></image>
+      <image src='/img/shop_detail/close.png' class='close_ma' bindtap='control_share'></image>
+      <view class='share_tap'>
+          <button class='zhuanfa' open-type='share'>转发</button>
+          <button class='save_local' bindtap='saveTheImg'>保存图片</button>
+      </view>
+    </view>
+  </view>
+  <!--地图  -->
+  <view class='shop_map' wx:if="{{if_show}}">
+    <map id='shop_map_detail' longitude='{{shop_detail.shopJd}}' latitude='{{shop_detail.shopWd}}' scale='{{scale}}'>
+      <cover-image src='/img/center.png' class='center'></cover-image>
+    </map>
+    <view class='control_map'>
+    <view class='close' catchtap='find_shop'>关闭</view>
+      <view class='plus' bindtap='plus_map'><image src='/img/shop_detail/add_coin.png' style='width:60rpx;height:60rpx;'></image></view>
+      <view class='minus' bindtap='minus_map'><image src='/img/shop_detail/jian.png' style='width:60rpx;height:60rpx;'></image></view>
+    </view>
+  </view>
+  <scroll-view class='main' scroll-y="true">
+    <!--商店图片  -->
+    <view class='top'>
+      <image class='top_img' src='{{cdnaddr}}{{shop_detail.shopPic}}'></image>
+      <!-- 收藏 -->
+      <image bindtap='collect' src='/img/shop_detail/collect_yes.png' class='collect' wx:if="{{collected == 0}}"></image>
+      <image bindtap='collect' src='/img/shop_detail/collect_no.png' class='collect' wx:else></image>
+      
+      <image src='/img/shop_detail/share.png' class='share' bindtap='control_share'></image>
+      <image src='/img/shop_detail/comment.png' class='comment'></image>
+    </view>
+    <!--商店简介  -->
+    <view class='shop_info'>
+      <view class='shop_content'>
+        <view class='shop_detail_name'>
+          <text style='font-size:34rpx;color:#2b333b'>{{shop_detail.shopName}}</text>
+        </view>
+        <view class='shop_time'>
+          <text style='font-size:30rpx;color:#71777d'> 营业时间 : {{shop_detail.workTime}}</text>
+        </view>
+        <view class='shop_dec'>
+          <text style='font-size:30rpx;color:#71777d' wx:if="{{shop_detail.shopRemark}}">店铺简介 : <text style='font-size:26rpx;'>{{tools.cut_text(shop_detail.shopRemark)}}</text></text>
+          <text style='font-size:26rpx;color:#71777d' wx:else>店铺简介: 此店铺主人很懒，啥都没写</text>
+        </view>
+        <view class='shop_connect'>
+          <view class='shop_address' bindtap='find_shop'>
+            <view class='address_img'>
+              <image src='/img/addr.png' style='width:50rpx;height:50rpx;'></image>
+            </view>
+            <view class='address_dec'>
+              <text>{{shop_detail.shopAddr}}</text>
+            </view>
+          </view>
+          <view class='shop_tel' bindtap='call_shop'>
+            <image src='/img/shop_detail/tel.png' style='width:80rpx;height:80rpx;'></image>
+          </view>
+        </view>
+        <view class='shop_coupon'>
+          <view class='max_tomius'>满减</view>
+          <view class='max_dec'>满99减50</view>
+          <view class='get_coupon' bindtap='setModalStatus' data-statustwo="1">
+            <text>去领券</text>
+            <image src='/img/right.png' style='width:30rpx;height:30rpx;'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--商品介绍  -->
+    <view class='goods'>
+
+      <view class='goods_top'>
+        <image src='/img/heart.png' style='width:40rpx;height:40rpx;margin-left:40rpx;'></image>
+        <view style='font-size:34rpx;color:#2b333b;margin-left:10rpx;'>大家都在买</view>
+      </view>
+
+      <view class='shop_content goods_content' style='background:#fff;'>
+        <image src='' class='goods_img'></image>
+        <view class='goods_all'>
+          <view class='goods_name' style='color:#71777d'>滴滴洗脚液</view>
+          <view class='goods_price' style='font-size:40rpx;color:#fb4e44'>￥550.00</view>
+        </view>
+      </view>
+
+      <view class='goods_bottom' bindtap='goto_goods'>
+        <text style='font-size:30rpx;color:#71777d;margin-left:16rpx;'>查看全部商品</text>
+        <image src='/img/more.png' style='width:46rpx;height:46rpx;margin-right:16rpx;'></image>
+      </view>
+    </view>
+    <!--店铺印象  -->
+    <view class='goods impress'>
+      <view class='goods_top'>
+        <image src='/img/heart.png' style='width:40rpx;height:40rpx;margin-left:40rpx;'></image>
+        <view style='font-size:34rpx;color:#2b333b;margin-left:10rpx;'>店铺印象</view>
+      </view>
+      <view class='impress_all'>
+        <view class='impress-left'>
+          <image src=' ' class='avatar'></image>
+        </view>
+        <view class='impress-right'>
+          <view class='nick_name' style='color:#71777d'>
+            saphim
+          </view>
+          <view class='comment_time' style='color:#b7bbbf'>2019.8.6</view>
+          <view class='comment_dec' style='font-size:30rpx;color:#2b333b'>
+            多传撒多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多的点点滴滴多多多多多多多多多多
+          </view>
+          <view class='comment_img'>
+            <view style='width:100%;height:100%;' class='img_details'>
+               <image src='' class='img'></image>
+              <image src='' class='img'></image>
+              <image src='' class='img'></image> 
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='goods_bottom' bindtap='goto_shop_comments'>
+        <text style='font-size:30rpx;color:#71777d;margin-left:16rpx;'>查看全部评论</text>
+        <image src='/img/more.png' style='width:46rpx;height:46rpx;margin-right:16rpx;'></image>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 优惠券 -->
+  <view class='coupon_xze' wx:if="{{ showModalStatus }}">
+    <view class='hideshow' bindtap="setModalStatus" data-statustwo="0"></view>
+    <view class='bottom_coupon' animation="{{animationData}}">
+      <!-- 券(内容)---------------------------------------- -->
+      <view class='coupon_quan'>
+        <view class='coupon_view'>
+          <view class='coupon_info'>
+            <view style='font-size:40rpx;color:#ff5d00;text-align:center'>￥550.00</view>
+            <view style='font-size:30rpx;color:#b7bbbf;text-align:center'>满25元使用</view>
+          </view>
+          <view class='coupon_time'>
+            <view style='font-size:34rpx;color:#2b333b;text-align:left'>全店使用</view>
+            <view style='font-size:30rpx;color:#b7bbbf;text-align:left;font-size:26rpx;'>有效期至:2012年12月12日</view>
+          </view>
+          <view class='coupon_get'>
+            <view style='font-size:34rpx;color:#fff;background:#fb4e44;padding:0 20rpx;border-radius:10rpx;line-height:40rpx;height:44rpx;'>领取</view>
+          </view>
+        </view>
+      </view>
+      <!-- ------------------------------------------------ -->
+    </view>
+  </view>
+</view>

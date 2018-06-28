@@ -1,0 +1,52 @@
+page {
+  background: #f3f5f7;
+}
+
+.payment_result {
+  height: 370rpx;
+  margin-top: 16rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.result image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 42rpx;
+}
+
+.success {
+  color: #ff5d00;
+  font-size: 26rpx;
+}
+
+.ayment_money {
+  color: #333;
+  margin-top: 50rpx;
+}
+
+.symbol {
+  font-size: 40rpx;
+}
+
+.money {
+  font-size: 60rpx;
+}
+
+.sumbit {
+  margin-top: 82rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sumbit button {
+  width: 702rpx;
+  height: 88rpx;
+  color: #fff;
+  font-size: 34rpx;
+  background: #ff5d00;
+  border-radius: 16rpx;
+}

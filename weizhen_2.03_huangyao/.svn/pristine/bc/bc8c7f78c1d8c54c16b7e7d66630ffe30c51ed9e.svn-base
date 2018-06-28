@@ -1,0 +1,40 @@
+<!--pages/apply_enter_weizhen/become_auditing/become_auditing.wxml-->
+<!-- 商户资料start -->
+  <view class='seller'>
+    <view class='seller_means'>
+      <text>商户账号</text>
+      <input type='number' placeholder-class='cue_writing' placeholder='请输入11位手机号数字' maxlength='11' value='' bindinput='accountNumber'></input>
+    </view>
+    <view class='seller_means seller_password'>
+      <text>密码</text>
+      <input type='text' placeholder-class='cue_writing' placeholder='请输入6-12位英文或数字' maxlength='12' value='' bindinput='cipherCode'></input>
+    </view>
+  </view>
+  <!-- 商户资料end -->
+
+  <!-- 上传营业执照start -->
+  <view class="business_licence">
+    <view class='upload_license'>
+      <text class='upload_prompt'>请上传营业执照</text>
+      <text class='upload_matter'>(上传照片文字清晰，露出白边和国徽)</text>
+    </view>
+    <view class='upload_photo' bindtap='chooseImage'>
+      <image wx:if="{{photo}}" src='{{photo}}'></image>
+      <image wx:else src='/img/enter/3yinye@2x.png'></image>
+    </view>
+  </view>
+  <!-- 上传营业执照end -->
+
+  <!-- 入驻协议start -->
+  <view class='protocol'>
+    <image class='tacitly_approve' src='/img/enter/2yes@2x.png'></image>
+    <text class='protocol_detail'>我已经阅读并同意</text>
+    <text class='protocol_enter'>《微阵联盟用户入驻协议》</text>
+  </view>
+  <!-- 入驻协议end -->
+
+  <!-- 提交按钮start -->
+  <view class='submit' bindtap='submit'>
+    <button>提交审核</button>
+  </view>
+  <!-- 提交按钮end -->

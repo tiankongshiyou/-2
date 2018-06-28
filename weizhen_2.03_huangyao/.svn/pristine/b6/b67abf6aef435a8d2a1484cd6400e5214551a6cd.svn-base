@@ -1,0 +1,57 @@
+/* pages/center/marketing_activity/marketing_activity.wxss */
+@import "../center_cup/center_cup.wxss";
+
+.cup_userimg {
+  height: 357rpx;
+}
+.cup_name{
+  font-size: 30rpx;
+}
+.cup_userimg image {
+  height: 357rpx;
+}
+
+.cup_usertxt {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.cup_moneystop {
+  font-size: 40rpx;
+  color: #ff5d00;
+}
+
+.cup_usertxt {
+  height: 325rpx;
+}
+.data_cup{
+  font-size: 26rpx;
+  color: #b7b7b7;
+}
+.cup_moneys{
+  flex-direction: column;
+}
+.cup_data {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.cup_data text {
+  width: 220rpx;
+  height: 44rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.cup_data image {
+  width: 40rpx;
+  height: 44rpx;
+  margin-right: 42rpx;
+}

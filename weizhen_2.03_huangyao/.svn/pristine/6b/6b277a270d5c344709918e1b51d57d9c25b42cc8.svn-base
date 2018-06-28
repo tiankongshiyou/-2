@@ -1,0 +1,98 @@
+{
+  "pages": [
+
+    "pages/business/business",
+    "pages/center/asset_details/asset_details",
+    "pages/center/install_password/install_password",
+    "pages/center/center_cup/center_cup",
+    
+    "pages/goods/take_delivery/take_delivery",
+    "pages/center/basic/basic",
+    "pages/apply_enter_weizhen/under_line/under_line",
+    "pages/apply_enter_weizhen/refer_auditing/refer_auditing",
+    "pages/apply_enter_weizhen/scan_enter/scan_enter",
+    "pages/collect_money/collect_money",
+    "pages/center/revise_password/revise_password",
+    
+    "pages/center/identity_validate/identity_validate",
+    "pages/center/intercalate/intercalate",
+    "pages/center/binding_phone/binding_phone",
+    "pages/shop_detail/new_or_hot_shop/new_or_hot_shop",
+    "pages/shop_detail/new_shop/new_shop",
+    "pages/shop_detail/shop_comments/shop_comments",
+    "pages/shop_detail/search_shop/search_shop",
+    "pages/center/replace_phone/replace_phone",
+    "pages/goods/goods_detail/goods_detail",
+    "pages/goods/goods",
+    "pages/apply_enter_weizhen/auditing_success/auditing_success",
+    "pages/auth/auth",
+    "pages/goods/newly_increased/newly_increased",
+    "pages/order_center/no_receipt_address/no_receipt_address",
+    "pages/order_center/add_receipt_address/add_receipt_address",
+    "pages/around/around",
+    "pages/center/center",
+    "pages/center/about_wx/about_wx",
+    "pages/center/online_chat/online_chat",
+    "pages/center/property/property",
+    "pages/apply_enter_weizhen/apply_enter_weizhen",
+    "pages/apply_enter_weizhen/defray_success/defray_success",
+    "pages/apply_enter_weizhen/ticket_market/ticket_market",
+    "pages/center/marketing_activity/marketing_activity",
+    
+    "pages/shop_detail/shop_detail",
+    "pages/center/shop_collect/shop_collect",
+    "pages/center/shop_management/shop_management",
+    "pages/apply_enter_weizhen/payment_result/payment_result",
+    "pages/center/withdrawal_result/withdrawal_result",
+    "pages/center/withdrawal_record/withdrawal_record",
+    "pages/apply_enter_weizhen/commercial_tenant/commercial_tenant",
+    "pages/apply_enter_weizhen/Withdrawal_password/Withdrawal_password",
+    "pages/apply_enter_weizhen/auditing_fail/auditing_fail",
+    "pages/apply_enter_weizhen/turn_into/turn_into",
+    "pages/apply_enter_weizhen/become_auditing/become_auditing",
+    "pages/apply_enter_weizhen/target_auditing/target_auditing",
+    "pages/center/myshop_manage/myshop_manage",
+    "pages/center/my_team/my_team",
+    "pages/center/withdraw_cash/withdraw_cash",
+    "pages/center/about_text/about_text",
+    "pages/order_center/order_center",
+    "pages/order_center/confirm_order/confirm_order",
+    "pages/order_center/order_confirm/order_confirm",
+    "pages/order_center/order_waitfor/order_waitfor",
+    "pages/order_center/order_details/order_details",
+    "pages/order_center/return_success/return_success",
+    "pages/order_center/return_goods/return_goods",
+    "pages/center/micro_powder/micro_powder"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微阵联盟",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#ee404a",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/business/business",
+        "text": "商家",
+        "iconPath": "img/tabbar/business.png",
+        "selectedIconPath": "img/tabbar/business_hl.png"
+      },
+      {
+        "pagePath": "pages/around/around",
+        "text": "附近",
+        "iconPath": "img/tabbar/around.png",
+        "selectedIconPath": "img/tabbar/around_hl.png"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "text": "会员中心",
+        "iconPath": "img/tabbar/me_hl.png",
+        "selectedIconPath": "img/tabbar/me.png"
+      }
+    ]
+  }
+}

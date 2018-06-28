@@ -1,0 +1,203 @@
+﻿团队开发约束规范
+
+    项目提交必须添加日志，好合并代码(2018.6.5 9.47新增)
+        新增的页面和修改的页面添加到提交记录里面，例如
+        新增
+            pages/index
+        修改
+            pages/auth
+
+
+    图片保存规范(2018.6.5 9.47新增)
+        所有只有某个页面单独要用到的图片，以文件夹形式保存在img/目录下，文件夹的名字就是页面的名字
+        比如index页面，保存的图片地址就是img/index下
+        如果是公用的图片，就直接放在img/目录下
+
+
+    命名规范(2018.6.1 10.07新增)
+        所有变量、注释、页面的命名，采用_连接方式，尽量做到简单易读
+        例如 search_shop  ---》搜索店铺页面
+
+
+    所有目前存在页面备注(2018.6.2 12.39更新)
+        //首页---华晨
+        "pages/business/business",                                      //首页
+
+        //授权页面---华晨ok
+        "pages/auth/auth",                                              //授权页面
+
+        //个人中心---黄瑶
+        "pages/center/center",                                          //个人中心
+        "pages/center/replace_phone/replace_phone",                     //更换手机号
+		"pages/center/basic/basic"										//基本资料
+		"pages/center/about_wx/about_wx" 								//关于微阵
+		"pages/center/online_chat/online_chat"							//在线客服
+		"pages/center/micro_powder/micro_powder"						//微粉管理
+		
+		
+		6/6:添加页面
+        "pages/center/shop_collect/shop_collect                        //店铺收藏
+        "pages/center/withdraw_cash/withdraw_cash",                    //提现
+        "pages/center/my_team/my_team",                                //我的团队
+        'pages/center/my_team/my_team'                                 // 我的团队
+        'pages/center/shop_collect/shop_collect'                       // 店铺收藏
+        'pages/center/micro_powder/micro_powder'                       // 微粉管理
+        6/7：
+        "pages/center/shop_collect/shop_collect",                      //店铺收藏接口已调通，验证也做好了
+        "pages/center/center_cup/center_cup",                          //卡券包接口已调通，现在没数据，等有数据了再加数据
+        "pages/center/withdraw_cash/withdraw_cash",                    //提现页面功能实现
+        "pages/center/property/property"                               //添加我的资产页面
+		6/8：
+		"pages/order_center/order_center"  							   //接口已调通，后期等数据完整出来再来看看数据渲染的完整效果
+		"pages/center/property/property",							   //我的资产接口调通一半，里面加了新的东西，但是后台没有状态数据	
+		新增页面(关于订单中心的)：
+		"pages/order_center/delivery/delivery",						   //等待发货
+		"pages/order_center/refundable/refundable",					   //退换中
+		"pages/order_center/refund/refund",					           //退款中
+		"pages/order_center/transaction_success/transaction_success",  //交易成功
+		"pages/order_center/transaction_fail/transaction_fail",        //交易失败
+		"pages/center/myshop_manage/myshop_manage",					   //店铺管理页面
+
+        "pages/center/identity_validate/identity_validate"            //身份验证
+        "pages/center/revise_password/revise_password"                //修改提现密码
+        "pages/center/resetting_password/resetting_password"          //重置提现密码
+        "pages/center/install_password/install_password"              //设置提现密码
+		"pages/center/myshop_manage/myshop_manage",                   //我的店铺管理
+		
+		6/12：
+		"pages/center/center"                                         //会员中心页面（修改）
+		"pages/center/myshop_manage/myshop_manage",                   //我的店铺管理页面和商家状态修改（修改）
+		
+		6/14：
+		"pages/center/marketing_activity/marketing_activity",           //优惠券
+		
+		
+        //商品模块---华晨
+        "pages/goods/goods",                                            //商品列表
+        "pages/goods/goods_detail/goods_detail",                        //商品详情
+
+        //订单模块---毛丹and黄瑶
+        "pages/order_center/order_center",                              //订单中心
+        "pages/order_center/confirm_order/confirm_order",               //确认订单
+        "pages/order_center/order_confirm/order_confirm",               //确认订单--重复页面
+        "pages/order_center/order_waitfor/order_waitfor",               //待确认订单
+        "pages/order_center/order_details/order_details",               //订单详情
+        "pages/order_center/return_success/return_success",             //返款成功
+        "pages/order_center/return_goods/return_goods",                 //返回商品
+        "pages/order_center/take_delivery/take_delivery",               //收货地址
+        "pages/order_center/no_receipt_address/no_receipt_address",     //无收货地址缺省页面
+        "pages/order_center/add_receipt_address/add_receipt_address",   //新增-收货地址缺省页面
+
+        //店铺模块---谢钢
+        "pages/shop_detail/shop_detail",                                //店铺详情
+        "pages/shop_detail/shop_comments/shop_comments",                //店铺评论
+        "pages/shop_detail/search_shop/search_shop",                    //搜索店铺
+		
+		//补充页面--谢钢
+		"pages/order_center/Withdrawal_password/Withdrawal_password",  //提现密码
+		"pages/order_center/withdrawal_result/withdrawal_result",    //提现成功
+		"pages/order_center/withdrawal_record/withdrawal_record",    //提现记录  
+		"pages/shop_detail/mycomments/mycomments",            //我的评论  
+		"pages/shop_detail/Shop_for_details/Shop_for_details",      //商品详情
+		
+		
+		//华晨，完成
+        "pages/shop_detail/new_or_hot_shop/new_or_hot_shop",            //人气商家或者最新入驻商家列表
+
+        //地图模块---华晨ok
+        "pages/around/around"                                           //附近地图，展示所有商家
+
+		//入驻商家模块--毛丹
+		1.入驻微阵-成为商家
+		"pages/apply_enter_weizhen/scan_enter/scan_enter"                    //邀请入驻（6月5日）
+		"pages/apply_enter_weizhen/;"   	                             //入驻微阵
+		"pages/apply_enter_weizhen/commercial_tenant/commercial_tenant"	 //设置商户资料
+		"pages/apply_enter_weizhen/refer_auditing/refer_auditing" 		 //提交审核资料
+		"pages/apply_enter_weizhen/auditing_success/auditing_success" 	 //审核成功
+		"pages/apply_enter_weizhen/auditing_fail/auditing_fail" 		 //审核失败
+		
+		2.入驻微阵-成为准商家
+		"pages/apply_enter_weizhen/turn_into" 							 //成为准商家
+		"pages/apply_enter_weizhen/target_auditing"						 //提交审核资料
+
+		3.入驻微阵-普通会员转商家 6月2日
+		become_auditing提交审核资料
+		
+		线下支付 毛丹
+		6月2日
+		under_line 线下支付
+		defray_ success 支付成功
+		6月4日
+		ticket_market 券集市
+
+		"pages/collect_money/collect_money"         			//会员中心-店铺收钱(6月5日)
+		"pages/center/revise_password/revise_password"			//基本资料-设置提现密码(6月5日)
+		
+		
+
+    目录结构(2018.6.1 10.00新增)
+        按照模块来划分目录，目前存在的模块有
+        1.首页模块---index
+        2.地图模块---around文件夹
+        3.订单模块---order_center
+        4.商品模块----goods文件夹
+        5.店铺模块---shop_detail
+
+    api请求
+        接口请求和回调处理
+            1.所有的接口请求，使用port.js里面的getPort进行请求，回调函数传入方法里面进行处理
+            2.根据返回状态码处理回调
+
+        工具类
+            所有公用方法和外接js，存放在utils目录下
+            所有的工具类通过app里面引入到全局里面，通过this.util.getPort()这种方法来调用工具类的方法
+
+
+	文件处理规范
+		wxml文件
+			1.页面结构使用 container根目录view的class的结构
+				<!--index.wxml-->
+				<view class="container">
+				  <view class="userinfo">
+					<button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='gotoIndex'> 你好 微阵 </button>
+				  </view>
+				</view>	
+			
+			2.默认采用注释分块注释
+				类似于
+					<!--地图开始-->
+					
+					<!--地图结束-->
+			
+		wxss文件
+			1.继承的公用wxss放在根目录下的app.wxss文件里面
+			2.每个单独的页面公用布局放在前面
+			3.以功能模块为单位进行注释
+			类似于
+			/*---奖励记录开始---*/
+			/*---奖励记录结束---*/
+		
+		
+	全局变量
+		globalData.userInfo变量保存请求微信的wx.getUserInfo的回调方法
+
+
+    控制器打印信息
+        log方法里面需要两个参数
+            前一个参数是所在js+所在方法+提示信息
+            第二个参数是具体的报错信息
+        console.log("app.js-wx.login登录失败!"+res.errMsg)
+
+
+    项目缓存变量
+        userRole
+            通过code请求后台(/wx/memberscenter/queryCodeByMembers)返回body内的信息
+
+    原型页面
+        https://pro.modao.cc/app/6292a05295f83ef15f5d4c59251624fc94fc1bca
+
+    接口参数
+        所有的接口参数详细地址
+            https://www.eolinker.com/#/home/project/inside/api/list?groupID=-1&projectName=%E5%BE%AE%E9%98%B5%E8%81%94%E7%9B%9F&projectHashKey=d5xZZZT9b9f4fbb854c691a83201576fe07007de84e760e
+        查看接口邀请码
+            https://www.eolinker.com/#/invite/?inviteCode=FD4rtM

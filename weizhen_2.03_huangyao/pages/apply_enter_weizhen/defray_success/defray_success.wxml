@@ -1,0 +1,96 @@
+<view class='paypage'>
+  <view class="payoff">
+    <view class='succeed'>
+      <image src='/img/defrayal/2yes@2x.png'></image>
+    </view>
+    <view class='amount_money'>
+      <text>支付成功</text>
+    </view>
+    <view class='well_being'>
+      <text class='sign'>￥</text>
+      <text>20.89</text>
+    </view>
+    <view class='obtain'>
+      <image class='obtain_left' src='/img/defrayal/2xiantiao@2x.png'></image>
+      <text>恭喜您获得红包福利</text>
+      <image class='red_packet' src='/img/defrayal/2hongbao@2x.png'></image>
+      <image class='obtain_right' src='/img/defrayal/2xiantiao@2x.png'></image>
+    </view>
+  </view>
+  <view class='receive'>
+    <image src='/img/defrayal/2lingqu@2x.png' bindtap='setModalStatus0' data-statustwo="1"></image>
+  </view>
+
+  <!-- 弹出框 -->
+  <view class='coupon_xze'wx:if="{{ showModalStatus0 }}">
+    <view class='hiedshow' bindtap="setModalStatus0" data-statustwo="0"></view>
+    <view class='bottom_coupon' animation="{{animationData}}">
+      <!-- 最大盒子的图片 -->
+      <view class='quan_view'>
+        <image src='/img/defrayal/3hongbao@2x.png' class='quan_viewimg'></image>
+        <!-- 定位在图片上的券 -->
+        <view class='quan_collar'>
+          <view class='quan_center'>
+            <!-- 券 -->
+            <view class='quan_img'>
+              <image src='/img/defrayal/4quan@2x.png' style='width:100%;height:100%;'></image>
+              <image src='/img/defrayal/4quan@2x.png' style='width:100%;height:100%;'></image>
+              <image src='/img/defrayal/4quan@2x.png' style='width:100%;height:100%;'></image>
+              <!-- 券里的文字 -->
+              <view class='quan_xiao'>
+                <view class='quan_ling'>
+                  <view class='quan_lingleft'>
+                    <!-- 具体店铺 -->
+                    <image class='quan_lingimg'></image>
+                    <view class='quan_shop'>
+                      <view style='font-size:29rpx;'>春和田的一个世纪</view>
+                      <view style='font-size:26rpx;color:#b7bbbf;margin-top:10rpx;'>满100元使用</view>
+                    </view>
+                  </view>
+                  <view class='quan_lingright'>
+                    <view style='font-size: 38rpx;'>￥500</view>
+                  </view>
+                </view>
+                <view class='quan_ling'>
+                  <view class='quan_lingleft'>
+                    <!-- 具体店铺 -->
+                    <image class='quan_lingimg'></image>
+                    <view class='quan_shop'>
+                      <view style='font-size:29rpx;'>春和田的一个世纪</view>
+                      <view style='font-size:26rpx;color:#b7bbbf;margin-top:10rpx;'>满100元使用</view>
+                    </view>
+
+                  </view>
+                  <view class='quan_lingright'>
+                    <view style='font-size: 38rpx;'>￥500</view>
+                  </view>
+                </view>
+                <view class='quan_ling'>
+                  <view class='quan_lingleft'>
+                    <!-- 具体店铺 -->
+                    <image class='quan_lingimg'></image>
+                    <view class='quan_shop'>
+                      <view style='font-size:29rpx;'>春和田的一个世纪</view>
+                      <view style='font-size:26rpx;color:#b7bbbf;margin-top:10rpx;'>满100元使用</view>
+                    </view>
+                  </view>
+                  <view class='quan_lingright'>
+                    <view style='font-size: 38rpx;'>￥500</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='quan_btn' bindtap='ticketMarket'>
+            <image src='/img/defrayal/3gogogo@2x.png'></image>
+          </view>
+        </view>
+        <!-- 右上角关闭 -->
+        <view class='guan' bindtap="setModalStatus0" data-statustwo="0">
+          <image src='/img/defrayal/3no@2x.png' style='width:58rpx; height:58rpx;'></image>
+        </view>
+      </view>
+      <!-- 券 -->
+    </view>
+  </view>
+</view>

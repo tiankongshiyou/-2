@@ -1,0 +1,135 @@
+<!--pages/center/center_cup/center_cup.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">未使用</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">已使用</view>
+  <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">已过期</view>
+</view>
+
+<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+  <swiper-item>
+    <view wx:if="{{unusedNumber !== 0}}" class='onedata'>
+      <!-- 未使用 -->
+      <block wx:for="{{unusedNumber}}" wx:key="{{key}}">
+        <view class='cup_user'>
+          <view class='cup_userimg'>
+            <!-- 背景图片 -->
+            <image src='/img/center_cup/cup_bg.png' class='cupimg'>
+              <view class='cup_usertxt'>
+                <!-- 优惠券内容 -->
+                <!-- 店铺名 -->
+                <view class='cup_name'>
+                 良品铺子六一
+                </view>
+                <!-- 优惠金额 -->
+                <view class='cup_moneys'>
+                  <view class='cup_moneystop'>￥
+                    <text style='font-size:100rpx;'>100</text>
+                  </view>
+                  <view style='color:#808080'>[
+                    <text style='color:#4d4d4d'>满200可用</text> ]</view>
+                </view>
+                <!-- 券日期 -->
+                <view class='cup_data'>/18/07/8:00-/18/06/8:00</view>
+              </view>
+            </image>
+          </view>
+
+        </view>
+      </block>
+    </view>
+    <view class='unusedNumber' wx:else if="{{unusedNumber == 0}}">
+      <text>暂无优惠券</text>
+    </view>
+  </swiper-item>
+
+  <!-- ////////////////////////// -->
+
+  <swiper-item>
+    <view class='twodata' wx:if="{{usedNumberr !== 0}}">
+      <view class='onedata'>
+        <!-- 已使用 -->
+        <block wx:for="{{usedNumberr}}" wx:key="{{key}}">
+          <view class='cup_user'>
+            <view class='cup_userimg'>
+              <!-- 背景图片 -->
+              <image src='/img/center_cup/cup_bg.png' class='cupimg'>
+                <view class='cup_usertxt'>
+                  <!-- 优惠券内容 -->
+                  <!-- 店铺名 -->
+                  <view class='cup_name'>
+                    良品铺子六一
+                  </view>
+                  <!-- 优惠金额 -->
+                  <view class='cup_moneys'>
+                    <view class='cup_moneystop'>￥
+                      <text style='font-size:100rpx;'>100</text>
+                    </view>
+                    <view style='color:#808080'>[
+                      <text style='color:#4d4d4d'>满200可用</text> ]</view>
+                  </view>
+                  <!-- 券日期 -->
+                  <view class='cup_data'>/18/07/8:00-/18/06/8:00</view>
+                </view>
+              </image>
+              <image class='cup_toumimg' src='/img/center_cup/cup_bgtoum.png'></image>
+              <view class='cup_users'>
+                <image src='/img/center_cup/cup_user.png'></image>
+              </view>
+            </view>
+
+          </view>
+        </block>
+
+      </view>
+    </view>
+
+    <view class='unusedNumber' wx:else if="{{usedNumberr == 0}}">
+      <text>暂无优惠券</text>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='threedata' wx:if="{{braceNumber}}">
+      <view class='twodata'>
+        <view class='onedata'>
+          <!-- 失效 -->
+          <block wx:for="{{braceNumber}}" wx:key="{{key}}">
+            <view class='cup_user'>
+              <view class='cup_userimg'>
+                <!-- 背景图片 -->
+                <image src='/img/center_cup/cup_bg.png' class='cupimg'>
+                  <view class='cup_usertxt'>
+                    <!-- 优惠券内容 -->
+                    <!-- 店铺名 -->
+                    <view class='cup_name'>
+                   良品铺子六一
+                    </view>
+                    <!-- 优惠金额 -->
+                    <view class='cup_moneys'>
+                      <view class='cup_moneystop'>￥
+                        <text style='font-size:100rpx;'>100</text>
+                      </view>
+                      <view style='color:#808080'>[
+                        <text style='color:#4d4d4d'>满200可用</text> ]</view>
+                    </view>
+                    <!-- 券日期 -->
+                    <view class='cup_data'>/18/07/8:00-/18/06/8:00</view>
+                  </view>
+                </image>
+                <image class='cup_toumimg' src='/img/center_cup/cup_bgtoum.png'></image>
+                <view class='cup_users'>
+                  <image src='/img/center_cup/cup_overdue.png'></image>
+                </view>
+              </view>
+
+            </view>
+          </block>
+
+        </view>
+      </view>
+    </view>
+
+    <view class='unusedNumber' wx:else if="{{braceNumber == 0}}">
+      <text>暂无优惠券</text>
+    </view>
+  </swiper-item>
+</swiper>

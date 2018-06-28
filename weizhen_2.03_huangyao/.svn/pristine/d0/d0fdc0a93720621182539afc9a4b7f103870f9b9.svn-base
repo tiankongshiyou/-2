@@ -1,0 +1,142 @@
+.carousel {
+  height: 300rpx;
+  margin: 0;
+}
+
+swiper {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 店铺价格名称 */
+.shop_name_price{
+  height: 296rpx;
+  background: #fff;
+}
+.shop_name_price_width{
+  width: 702rpx;
+  margin-left: 24rpx;
+}
+.shop_pricename{
+  height: 192rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+.price_box{
+  display: flex;
+  justify-content: flex-start;
+  padding: 30rpx 0 15rpx 0;
+}
+.price_one{
+  color: #e62318;
+  font-size: 40rpx;
+  margin-right: 16rpx;
+}
+.price_tow{
+  text-decoration:line-through;
+  font-size: 20rpx;
+  color: #b7bbbf;
+}
+.price_txt{
+  font-size: 30rpx;
+  color: #333;
+}
+
+.shop_img_details{
+  display: flex;
+  justify-content: flex-start;
+  padding: 30rpx 0 30rpx 0;
+}
+.shop_img_left image{
+  width: 40rpx;
+  height: 40rpx;
+  padding-right: 20rpx;
+}
+
+/* 商品海报 */
+.poster{
+  height: 300rpx;
+}
+.poster image{
+  width: 100%;
+  height: 415rpx;
+}
+/* 立即购买 */
+.img_buttom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 98rpx;
+}
+.shop_details_img{
+  width: 45rpx;
+  height: 37rpx;
+}
+.buy{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.hideshow{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.bottom_buy{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 702rpx;
+  background-color: #fff;
+  height: 336rpx;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  padding:0 24rpx 0 24rpx;
+}
+.buy_number{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25rpx;
+}
+ .buy_number_img{
+  position: absolute;
+  width: 224rpx;
+  height: 68rpx;
+  margin-right: 32rpx;
+} 
+.number_shop{
+  width: 224rpx;
+  height: 68rpx;
+  margin-right: 32rpx;
+  border:1rpx solid #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Num_shop{
+  width:69rpx;
+  height:66rpx;
+  position:relative;
+  text-align: center;
+}
+
+.buy_button{
+  border-radius: 50rpx;
+  width: 702rpx;
+  color: #fff;
+  font-size: 34rpx;
+  background: #ff5d00;
+  margin-top: 16rpx;
+}

@@ -1,0 +1,80 @@
+/* 搜索栏 */
+.top_box{
+  background: #fff;
+  height: 193rpx;
+  width: 750rpx;
+}
+.top_searchbox{
+  width: 702rpx;
+  margin-left: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16rpx;
+  margin-bottom:30rpx;
+
+}
+.top_box_img{
+  width: 72rpx;
+  height: 72rpx;
+  background: #e6e6e6;
+  border-top-left-radius: 100rpx;
+  border-bottom-left-radius: 100rpx;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.top_search{
+  width: 546rpx;
+  height: 72rpx;
+  border-top-right-radius: 100rpx;
+  border-bottom-right-radius: 100rpx;
+}
+.top_sell{
+  color:red;
+  border-bottom:1rpx solid red;
+  padding:25rpx 0 25rpx 0;
+}
+
+.top_sell_soldout{
+  font-size: 30rpx;
+  color:#4d4d4d;
+  height: 88rpx;
+  margin-top: 13rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.top_sell{
+  font-size: 30rpx;
+  color: #4d4d4d;
+}
+.shop_detailed{
+  width: 346rpx;
+  height: 480rpx;
+  background: #fff;
+  margin-top:10rpx; 
+}
+
+/* 出售、下架栏 */
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  line-height: 88rpx;
+  background-color: #fff;
+}
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  color: #4d4d4d;
+}
+.on {
+  color: red;
+  border-bottom:5rpx solid red;
+}
+.swiper-box {
+  width: 702rpx;
+  height: 100%;
+}
+.swiper-box view {
+  text-align: center;
+}

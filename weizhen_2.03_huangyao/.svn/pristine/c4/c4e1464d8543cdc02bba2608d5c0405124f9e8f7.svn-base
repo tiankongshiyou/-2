@@ -1,0 +1,33 @@
+<!--pages/center/shop_collect/shop_collect.wxml-->
+<view class='shop_collect'>
+  <!-- 搜索框 -->
+  <view class='collect_view'>
+    <view class='collect_input'>
+      <input placeholder='搜索您收藏过的店铺'bindconfirm='bindconfirm' bindinput='bindinput' placeholder-style='color: #b7bbbf;'></input>
+      <view bindtap='search'>
+        <text>搜索</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 收藏商家 -->
+
+  <view class='collect_bm' wx:if='{{shop_collect.length!== 0}}  '>
+    <block wx:for="{{shop_collect}}" wx:key="{{key}}">
+      <view class='collect_botn'>
+        <view class='collect_shop'>
+          <view class='collect_img'>
+            <image src='{{cdnaddr}}{{item.shopPic}}'></image>
+          </view>
+          <view class='collect_botntxt'>
+            <text>{{item.shopName}}</text>
+          </view>
+
+        </view>
+      </view>
+    </block>
+  </view>
+  <view wx:elseif="{{shop_collect.length== 0}}" class='collect_shop'>
+    <text>您暂无收藏哦~</text>
+  </view>
+</view>

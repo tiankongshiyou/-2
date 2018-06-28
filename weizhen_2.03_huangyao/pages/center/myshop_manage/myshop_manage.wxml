@@ -1,0 +1,40 @@
+<!--pages/center/myshop_manage/myshop_manage.wxml-->
+<view class='myshop_manage'>
+  <view class='myshop_img'>
+      <image src='/img/my_shop/1bg1@2x_02.png'></image>
+      <view class='myshop_box'>
+        <image src='{{userInfo.wxImg}}'></image>
+        <text>{{userInfo.wxNc}}</text>
+      </view>
+  </view>
+
+  <view class='myshop_cont'>
+    <view class='myshop_center'>
+      <view class='myshop_guan'>
+        <view class='myshop_fang'>
+          <image src='/img/my_shop/dingdan1@2x.png'></image>
+        </view>
+        <view class='myshop_fang' bindtap='shop_management'>
+          <image src='/img/my_shop/dingdan2@2x.png'></image>
+        </view>
+         <view class='myshop_fang' bindtap='marketing_activity'>
+          <image src='/img/my_shop/dingdan4@2x.png'></image>
+        </view>
+        <!-- <view class='myshop_fang'>
+          <image src='/img/my_shop/dingdan3@2x.png'></image>
+        </view> -->
+      </view>
+
+      <!-- <view class='myshop_guan'>
+        <view class='myshop_fang'>
+          <image src='/img/my_shop/dingdan4@2x.png'></image>
+        </view>
+        
+      </view> -->
+    </view>
+  </view>
+
+  <view class='myshop_btn'>
+    <image src='/img/center/e@2x.png'></image>
+  </view>
+</view>

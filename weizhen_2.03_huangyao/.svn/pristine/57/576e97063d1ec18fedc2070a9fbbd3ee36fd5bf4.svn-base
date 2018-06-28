@@ -1,0 +1,18 @@
+<!-- 上传营业执照start -->
+<view class="business_licence">
+  <view class='upload_license'>
+    <text class='upload_prompt'>请上传营业执照</text>
+    <text class='upload_matter'>(上传照片文字清晰，露出白边和国徽)</text>
+  </view>
+  <view class='upload_photo' bindtap='chooseImage'>
+     <image wx:if="{{photo}}" src='{{photo}}'></image>
+     <image wx:else src='/img/enter/3yinye@2x.png'></image> 
+  </view>
+</view>
+<!-- 上传营业执照end -->
+
+<!-- 提交按钮start -->
+<view class='submit' bindtap='auditingSuccess'>
+  <button>提交</button>
+</view>
+<!-- 提交按钮end -->

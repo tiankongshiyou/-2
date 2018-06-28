@@ -1,0 +1,39 @@
+<view class='increased'>
+  <view class='consignee'>
+    <view class='heading'>收货人</view>
+    <view class='details'>
+      <input type='text' name="shr" placeholder-class="phcolor" placeholder='请输入收货人姓名' data-shr='{{shr}}' value='{{shr}}' bindinput="userNameInput"/>
+    </view>
+  </view>
+  <view class='consignee'>
+    <view class='heading'>手机号码</view>
+    <view class='details'>
+      <input type='number' name="shrTel" placeholder-class="phcolor" placeholder='请输入手机号码' data-shrTel='{{shrTel}}' maxlength='11' value='{{shrTel}}' bindinput="userTelInput"/>
+    </view>
+  </view>
+  <view class='consignee'>
+    <view class='heading'>所在地区</view>
+    <view class='details'>
+      <picker mode="region" bindchange="bindRegionChange">
+        <text>{{region[0]}} {{region[1]}} {{region[2]}}</text>
+      </picker>
+      <!-- <input type='text' placeholder-class="phcolor" placeholder='请输入所在地区' value=''/> -->
+      <image src='/images/basic_data/go-to@2x.png' bindchange="bindRegionChange"></image>
+    </view>
+  </view>
+  <view class='consignee'>
+    <view class='heading'>详细地址</view>
+    <view class='details'>
+      <input type='text' placeholder-class="phcolor" placeholder='请输入详细地址' name="addr" data-addr='{{addr}}' value='{{addr}}' bindinput='userAddrInput'/>
+    </view>
+  </view>
+  <view class='tacitly_approve'>
+    <text class='heading'>设为默认地址</text>
+    <image src='/images/basic_data/open.png'></image>
+  </view>
+</view>
+<!-- 确定按钮start -->
+<view class='submit' bindtap='submit'>
+  <button>确认</button>
+</view>
+<!-- 确定按钮end -->

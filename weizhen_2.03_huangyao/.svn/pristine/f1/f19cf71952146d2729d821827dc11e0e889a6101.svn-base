@@ -1,0 +1,77 @@
+var app = getApp();
+Page({
+  data: {
+    currentTab: 0
+  },
+  bintap: function () {
+    wx.navigateTo({
+      url: '/pages/business/business',
+    })
+  },
+  onLoad: function (options) {
+    // 页面初始化 options为页面跳转所带来的参数
+    console.log(app.globalData.userRole.wxOpenId, "******************************")
+    var that = this
+    var openId = app.globalData.userRole.wxOpenId;
+    wx.request({
+      url: "https://www.worldwz.com/api" + "/coupons/getCount",
+      method: "post",
+      dataType: "json",
+      data: {
+        openid: openId
+      },
+      success: function (res) {
+        if (res.data.code == 200) {
+          console.log(res.data.code, "********************************")
+          var braceNumber = res.data.body.braceNumber
+          var unusedNumber = res.data.body.unusedNumber
+          var usedNumber = res.data.body.usedNumber
+          that.setData({
+            braceNumber: braceNumber,
+            unusedNumber: unusedNumber,
+            usedNumberr: usedNumber
+          })
+        } else {
+          wx.showToast({
+            title: '服务器走神啦',
+          })
+        }
+      }
+    })
+    // var center_cupjson = {
+    //   openid: openId,
+    //   dataType: "json"
+    // }
+    // app.util.getPort("center_center_cup", app, center_cupjson, function (res) {
+    //   console.log(res)
+    // var braceNumber = res.data.body.braceNumber
+    // var unusedNumber = res.data.body.unusedNumber
+    // var usedNumber = res.data.body.usedNumber
+    // that.setData({
+    //   braceNumber: braceNumber,
+    //   unusedNumber: unusedNumber,
+    //   usedNumberr: usedNumber
+    // })
+    //   console.log(res.data.body)
+    // })
+  },
+  //滑动切换
+  swiperTab: function (e) {
+    var that = this;
+    that.setData({
+      currentTab: e.detail.current
+    });
+  },
+  //点击切换
+  clickTab: function (e) {
+    console.log(e,"------------------------------")
+    var that = this;
+    if (this.data.currentTab === e.target.dataset.current) {
+      return false;
+    } else {
+      that.setData({
+        currentTab: e.target.dataset.current
+      })
+    }
+  }
+})

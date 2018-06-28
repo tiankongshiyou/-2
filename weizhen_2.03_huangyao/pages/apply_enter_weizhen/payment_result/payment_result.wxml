@@ -1,0 +1,13 @@
+<view class="payment_result">
+  <view class='result'>
+    <image src='/img/enter/2yes@2x.png'></image>
+  </view>
+  <view class='success'>支付成功</view>
+  <view class='ayment_money'>
+    <text class='symbol'>￥</text>
+    <text class='money'>299.00</text>
+  </view>
+</view>
+<view class='sumbit' bindtap='referAuditing'>
+  <button>下一步</button>
+</view>

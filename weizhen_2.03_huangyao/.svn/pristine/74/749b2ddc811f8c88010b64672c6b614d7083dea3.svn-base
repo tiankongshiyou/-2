@@ -1,0 +1,22 @@
+<view class='container' wx:if="{{comments.length > 0}}" wx:for="{{comments}}" wx:key="class">
+  <view class='container_background'>
+      <view class='impress_all'>
+        <view class='impress-left'>
+          <image src='{{item.wx_img}}' class='avatar'></image>
+        </view>
+        <view class='impress-right'>
+          <view class='nick_name' style='color:#71777d'>{{item.wx_no}}</view>
+          <view class='comment_time' style='color:#b7bbbf'>{{item.plDate}}</view>
+          <view class='comment_dec' style='font-size:30rpx;color:#2b333b'>{{item.plText}}</view>
+          <view class='comment_img'>
+            <view style='width:100%;height:100%;' class='img_details' wx:for="{{item.pltp}}" wx:key="class">
+               <image src='{{item.url}}' class='img'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>
+<view class='container' wx:if="{{comments.length <= 0}}">
+    暂无数据
+</view>

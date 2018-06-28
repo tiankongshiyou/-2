@@ -1,0 +1,16 @@
+.top_txt{
+  background: #fff;
+  width:702rpx;
+  margin: 16rpx 0 314rpx 0;
+  padding:0 25rpx 0 25rpx; 
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.password{
+  display: flex;
+  align-items: center; 
+}
+input{
+  margin-left: 28rpx;
+}

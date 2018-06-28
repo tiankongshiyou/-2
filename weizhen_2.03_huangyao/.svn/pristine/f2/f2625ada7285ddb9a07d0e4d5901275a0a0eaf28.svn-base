@@ -1,0 +1,76 @@
+<!--pages/center/my_team/my_team.wxml-->
+
+<!--pages/center/center_cup/center_cup.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">商家</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">准商家</view>
+
+</view>
+
+<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+
+  <swiper-item>
+    <block wx:for="{{myteam}}" wx:key="key" wx:if='{{myteam !== 0 || myteam !== null ||myteam !== undefined ||wxOpenId.wxOpenId == "1000"}}'>
+      <view class='my_shophome' wx:if='{{wxOpenId.wxOpenId == "1000"}}'>
+        <view class='my_shopuser'>
+          <view class='my_user'>
+            <image src='/img/basic/1_1q923ne.jpg'></image>
+            <view class='my_usertxt'>
+              <text>{{item.shopName}}</text>
+              <text style='color:#808080;margin-left:10rpx;'>({{item.shopAddr}})</text>
+            </view>
+          </view>
+          <view class='my_userbtn'>
+            <text>电话：{{item.shopTel}}</text>
+            <text>团队人数：88人</text>
+          </view>
+        </view>
+
+       
+      </view>
+    </block>
+   <view class='myteam_esle' wx:elseif='{{myteam == 0 || myteam == null ||myteam == undefined ||wxOpenId.wxOpenId == "1000"}}'>
+      <text>暂无人数</text>
+    </view>
+  </swiper-item>
+
+  <!-- ////////////////////////// -->
+
+  <swiper-item>
+    <block wx:for="{{myteam}}" wx:key="key" wx:if='{{myteam !== 0 || myteam !== null ||myteam !== undefined || wxOpenId.wxOpenId == "2000"}}'>
+      <view class='my_shophome' wx:if='{{}}'>
+        <view class='my_shopuser'>
+          <view class='my_user'>
+            <image src='/img/basic/1_1q923ne.jpg'></image>
+            <view class='my_usertxt'>
+              <text>{{item.shopName}}</text>
+              <text style='color:#808080;margin-left:10rpx;'>({{item.shopAddr}})</text>
+            </view>
+          </view>
+          <view class='my_userbtn'>
+            <text>电话：{{item.shopTel}}</text>
+            <text>团队人数：88人</text>
+          </view>
+        </view>
+
+        <!-- <view class='my_shopuser'>
+          <view class='my_user'>
+            <image src=''></image>
+            <view class='my_usertxt'>
+              <text>东方明珠</text>
+              <text style='color:#808080;margin-left:10rpx;'>(安静的美猪子不需要可爱)</text>
+            </view>
+          </view>
+          <view class='my_userbtn'>
+            <text>电话：020-7336697</text>
+            <text>团队人数：88人</text>
+          </view>
+        </view> -->
+      </view>
+    </block>
+     <view class='myteam_esle' wx:elseif='{{myteam == 0 || myteam == null ||myteam == undefined ||wxOpenId.wxOpenId == "2000"}}'>
+      <text>暂无人数</text>
+    </view> 
+  </swiper-item>
+
+</swiper>

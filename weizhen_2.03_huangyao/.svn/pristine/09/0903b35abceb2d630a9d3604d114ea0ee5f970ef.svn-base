@@ -1,0 +1,44 @@
+<!--确认订单  -->
+<view class='container'>
+  <!-- 订单 -->
+  <view class='order'>
+    <view class='order_detail'>
+      <view class='order_top'>
+        <view>
+          <image style='width:32rpx;height:30rpx;margin-right:10rpx' src='/img/dianpu.png'></image>
+          <text style='font-size:26rpx;'>店铺名称</text>
+        </view>
+        
+      </view>
+      <view class='order_mid'>
+        <image src='' class='order_img'></image>
+        <view class='order_dec'>
+          <view style='color:#2b333b;margin-top:30rpx;font-size:32rpx; '>神奇神奇</view>
+
+          <view style='font-size:34rpx;color:#e62318'>￥520.00元</view>
+        </view>
+        <view class='order_right'>
+          <view style='font-size:26rpx;color:#71777d'>
+            <text style='font-size:22rpx;margin-right:6rpx;'>X</text>
+            <text>1</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='order_time'>
+    <view >订单编号：<text class='order_text'>3332221111</text></view>
+    <view>创建时间：<text class='order_text'>2017.08.10</text></view>
+    <view>交易编号：<text class='order_text'>111222333</text></view>
+    <view>发货时间：<text class='order_text'>2018.02.02</text></view>
+    <view>成交时间：<text class='order_text'>2018.02.30</text></view>
+  </view>
+  <view class='order_rmk'>
+    <view><text>快递单号：</text><input placeholder='输入快递单号' placeholder-style='color:#c3c3c3;'></input></view>
+    <view><text>快递公司：</text><input placeholder='输入快递公司' placeholder-style='color:#c3c3c3;'></input></view>
+    <view><text>备注信息：</text><input placeholder='输入备注信息' placeholder-style='color:#c3c3c3;'></input></view>
+  </view>
+  <view class='submit_order'>
+      <text>提交</text>
+  </view>
+</view>

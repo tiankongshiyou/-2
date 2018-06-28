@@ -1,0 +1,176 @@
+/* pages/center/property/property.wxss */
+
+.property {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.pro_btn{
+  width: 100%;
+  height:98rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 2rpx 10rpx #ccc;
+}
+.pro_btnleft{
+  width: 20%;
+  height:98rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 25rpx;
+  color: #808080;
+  text-align: center;
+}
+.pro_btnleft image{
+  margin:0 auto 0;
+}
+.pro_btnright{
+  width: 80%;
+  height:98rpx;
+  background: #ff5d00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color:#fff;
+
+}
+.poy_shouyi, .poy_shou, .poy_zhi {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 16rpx;
+  background: #fff;
+}
+
+.poy_shouyi {
+  height: 350rpx;
+}
+
+.poy_profit, .poy_detail, .poy_pay {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+}
+
+.poy_profit {
+  height: 284rpx;
+}
+
+.poy_detail, .poy_pay {
+  margin-bottom: 32rpx;
+  height: 300rpx;
+  color: #4d4d4d;
+  justify-content: space-between;
+}
+
+.poy_protxt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 30rpx;
+  color: #ff5d00;
+}
+
+.poy_txt, .poy_txttxt, .pay_shoutxt{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.poy_txt {
+  width: 220rpx;
+  
+}
+.poy_txttxt{
+  width:170rpx;
+}
+.pay_shoutxt{
+  width:200rpx;
+}
+.poy_lei {
+  display: flex;
+  flex-direction: column;
+  font-size: 34rpx;
+}
+
+.poy_proimg {
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.in_all {
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: #fff;
+}
+
+.in_allwide {
+  width: 175rpx;
+  height: 95rpx;
+  display: flex;
+  flex-direction: column;
+  color: #ff5d00;
+}
+
+.in_allwide text {
+  text-align: center;
+  font-size: 34rpx;
+}
+
+.xian {
+  width: 2rpx;
+  height: 53rpx;
+  background: #e6e6e6;
+}
+
+.poy_detailtop {
+  width: 100%;
+  font-size: 30rpx;
+  color: #ff5d00;
+}
+
+.poy_detailbtn {
+  width: 82%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto 0;
+}
+
+.poy_detailmoy {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.poy_detailmoy text{
+  width: 200rpx;
+  text-align: left;
+}
+.pay_shouzhi {
+  width: 190rpx;
+  height: 70rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 26rpx;
+  text-align: center;
+}
+
+.pay_shouimg {
+  display: flex;
+  align-items: center;
+}

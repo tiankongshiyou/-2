@@ -1,0 +1,118 @@
+page {
+  font-size: 30rpx;
+  background: #f3f5f7;
+}
+/* 商户资料start */
+.seller {
+  background: #fff;
+  margin-top: 16rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.seller_means {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  margin: 0 42rpx;
+}
+
+.seller_password {
+  border-top: 1rpx solid #e6e6e6;
+}
+
+.seller_means text {
+  width: 200rpx;
+  color: #4d4d4d;
+}
+
+.cue_writing {
+  color: #b3b3b3;
+}
+
+.seller_means input {
+  width: 100%;
+  color: #b3b3b3;
+  margin-left: 26rpx;
+}
+
+/* 商户资料end */
+
+/* 上传营业执照start */
+.business_licence {
+  height: 496rpx;
+  background: #fff;
+  margin-top: 16rpx;
+  padding: 0 42rpx;
+}
+
+.upload_license {
+  padding-top: 34rpx;
+  padding-bottom: 35rpx;
+}
+
+.upload_license text {
+  font-size: 26rpx;
+}
+
+.upload_prompt {
+  color: #4d4d4d;
+}
+
+.upload_matter {
+  color: #b3b3b3;
+  margin-left: 12rpx;
+}
+
+.upload_photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1rpx solid #e6e6e6;
+}
+
+.upload_photo image {
+ width: 666rpx;
+ height: 354rpx;
+}
+/* 上传营业执照end */
+
+/* 入驻协议start */
+.protocol {
+  height: 100rpx;
+  background: #fff;
+  padding-left: 42rpx;
+  margin-top: 16rpx;
+  display: flex;
+  align-items: center;
+}
+
+.tacitly_approve {
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.protocol_detail {
+  color: #4d4d4d;
+  margin-left: 42rpx;
+}
+
+.protocol_enter {
+  color: #e62318;
+}
+/* 入驻协议end */
+
+/* 提交按钮start */
+.submit {
+  margin-top: 72rpx;
+}
+
+.submit button {
+  width: 702rpx;
+  height: 88rpx;
+  color: #fff;
+  font-size: 34rpx;
+  background: #ff5d00;
+  border-radius: 16rpx;
+}
+/* 提交按钮end */

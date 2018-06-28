@@ -1,0 +1,47 @@
+<!-- //订单中心 -->
+<view class='container'>
+  <view class='header'>
+    <block wx:for="{{tab}}" wx:key="tab">
+      <view class='status {{status == index? "on":""}}' bindtap='change_status' data-index='{{index}}'>
+        {{item}}
+        <!-- <view class='line'></view> -->
+      </view>
+    </block>
+  </view>
+  <!-- 订单 -->
+  <block wx:for="{{tab}}" wx:if="{{status == index}}" wx:key="tabs">
+    <view class='order'>
+      <view class='order_detail'>
+        <view class='order_top'>
+          <view>
+            <image style='width:32rpx;height:30rpx;margin-right:10rpx' src='/img/dianpu.png'></image>
+            <text style='font-size:26rpx;'>店铺名称</text>
+          </view>
+          <view style='width:280rpx;font-size:30rpx;color:#2b333b;text-align:right;color:#ff5d00'>待付款</view>
+        </view>
+        <view class='order_mid'>
+          <image src='' class='order_img'></image>
+          <view class='order_dec'>
+            <view style='color:#2b333b;margin-top:30rpx;font-size:32rpx; '>神奇神奇</view>
+
+            <view style='font-size:34rpx;color:#e62318'>￥520.00元</view>
+          </view>
+          <view class='order_right'>
+            <view style='font-size:26rpx;color:#71777d'>
+              <text style='font-size:22rpx;margin-right:6rpx;'>X</text>
+              <text>1</text>
+            </view>
+          </view>
+        </view>
+         <view class='money'>共计0件商品,共0元
+          <text style='color:#71777d'>(已包含邮费)</text>
+        </view> 
+         <view class='order_bottom'>
+          <view class='comfirm'>确认</view>
+          <view class='cancel' style='color:#71777d' bindtap='close_order'>取消</view>
+        </view> 
+      </view>
+    </view>
+  </block>
+  
+</view>

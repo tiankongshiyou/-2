@@ -1,0 +1,491 @@
+/*菜单栏-------
+---------------
+---------------
+---------------  */
+
+.class_choose {
+  width: 100%;
+  height: 80rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.choose_whole {
+  width: 100rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  color: #666;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.whole_on {
+  width: 0;
+  transition: all 0.3s;
+}
+
+.active_class {
+  color: #ff5d00;
+  border-bottom:1rpx solid #ff5d00;
+}
+
+.choose_left, .choose_right {
+  height: 80rpx;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #666;
+  transition: all 0.4s;
+  position: relative;
+}
+
+.choose_right {
+  width: 90rpx;
+  color: #fff;
+  position: relative;
+}
+
+.choose_left {
+  width: 560rpx;
+  white-space: nowrap;
+}
+
+.left_on {
+  width: 0rpx;
+}
+
+.scroll_item_detail {
+  width: 120rpx;
+  height: 76rpx;
+  background-color: #fff;
+  display: inline-block;
+  margin: 2rpx 2rpx;
+  padding: 0 10rpx;
+}
+
+/* 动画线 */
+
+.line {
+  position: absolute;
+  width: 60rpx;
+  height: 8rpx;
+  background-color: #000;
+  border-radius: 10rpx;
+  transition: all 0.6s;
+}
+
+.line.a, .line.b, .line.c {
+  left: 50%;
+  margin-left: -30rpx;
+}
+
+.a {
+  top: 20rpx;
+}
+
+.b {
+  top: 36rpx;
+}
+
+.c {
+  top: 52rpx;
+}
+
+/* 线条动画 */
+
+.onA {
+  transform: rotate(225deg);
+  top: 36rpx;
+  left: 50%;
+  margin-left: -30rpx;
+}
+
+.onB {
+  opacity: 0;
+  transition: none;
+}
+
+.onC {
+  transform: rotate(495deg);
+  top: 36rpx;
+  left: 50%;
+  margin-left: -30rpx;
+}
+
+/* 所有列表 */
+
+.whole_class {
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 160rpx;
+  left: 100%;
+  transition: all 0.6s ease-out;
+  z-index: 6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.whole_class_item {
+  width: 33.3%;
+  height: 100rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.class_name {
+  padding: 0 30rpx;
+  font-size: 32rpx;
+  line-height: 62rpx;
+  color: #666;
+  background-color: #f5f5f5;
+  border-radius: 40rpx;
+}
+
+.on {
+  left: 0;
+  top: 156rpx;
+}
+
+/*轮播图-------
+---------------
+---------------
+---------------  */
+
+.carousel {
+  height: 350rpx;
+  margin: 0;
+}
+
+swiper {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+/*活动专区-------
+---------------
+---------------
+---------------  */
+
+.active_area {
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 16rpx;
+}
+
+.title {
+  width: 100%;
+  height: 106rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.push {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title_name {
+  color: #666;
+  font-size: 34rpx;
+}
+
+/* --------------  */
+
+.active_top {
+  width: 702rpx;
+  height: 150rpx;
+}
+
+.active_bottom {
+  margin-top: 8rpx;
+  width: 690rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.active_left, .active_right {
+  width: 330rpx;
+  height: 200rpx;
+  background-color: #ccc;
+  margin-top: 16rpx;
+  border-radius: 20rpx;
+}
+
+.on_one .active_bottom, .on_one .active_top {
+  animation: active_area 0.8s;
+}
+
+@keyframes active_area {
+  from {
+    transform: scale(0.5) rotateY(45deg);
+    opacity: 0.6;
+  }
+
+  to {
+    transform: scale(1) rotateY(0);
+    opacity: 1;
+  }
+}
+
+/*精选-------
+---------------
+---------------
+---------------  */
+
+.nice_choose {
+  height: 386rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 0;
+}
+
+.choose1 {
+  height: 500rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.nice_bottom {
+  width: 702rpx;
+  height: 250rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom1 {
+  height: 386rpx;
+}
+
+.nice_item {
+  width: 226rpx;
+  height: 250rpx;
+  background-color: #ccc;
+}
+
+.first {
+  width: 344rpx;
+  height: 386rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+}
+
+.second {
+  width: 344rpx;
+  height: 386rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.second_top {
+  width: 344rpx;
+  height: 250rpx;
+  background-color: #ddd;
+  border-radius: 20rpx;
+}
+
+.second_bottom {
+  width: 344rpx;
+  height: 122rpx;
+  background-color: #ddd;
+  border-radius: 20rpx;
+}
+
+/*新店入驻-------
+---------------
+---------------
+---------------  */
+
+.new_one, .new_two, .new_three {
+  border-radius: 20rpx;
+}
+
+/*约会-------
+---------------
+---------------
+---------------  */
+
+.dating {
+  height: 594rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+
+.date_item {
+  width: 702rpx;
+  height: 250rpx;
+  background-color: #fff;
+  display: flex;
+  margin-bottom: 8rpx;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date_top {
+  width: 345rpx;
+  height: 200rpx;
+  background-color: #ccc;
+  border-radius: 20rpx;
+}
+
+.date_bottom {
+  width: 226rpx;
+  height: 250rpx;
+  background-color: #ccc;
+  border-radius: 20rpx;
+}
+
+
+
+/*推荐商家-------
+---------------
+---------------
+---------------  */
+
+.shops {
+  height: 106rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.shops_detail {
+  width: 720rpx;
+  margin-left: 16rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+
+.shop_img {
+  width: 100%;
+  height: 300rpx;
+  background-color: #fff;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.shop_bottom {
+  height: 124rpx;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+
+.shop_name {
+  width: 692rpx;
+  height: 62rpx;
+  color: #2b333b;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 10rpx;
+}
+
+.shop_coupon {
+  width: 702rpx;
+  height: 62rpx;
+}
+.coupon{
+  width: 150rpx;
+  height: 30rpx;
+
+}
+
+/*具体分类-------
+---------------
+---------------
+---------------  */
+
+.detail_class_img {
+  height: 300rpx;
+}
+
+.detail_class_top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 300rpx;
+  background-color: #f5f5f5;
+}
+
+.class_top {
+  width: 345rpx;
+  height: 300rpx;
+  background-color: #fff;
+}
+
+.detail_class_near {
+  height: 100rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+.detail_class_near image{
+  width: 516rpx;
+  height: 47rpx;
+}
+/*回到顶部  */
+
+.goto_top {
+  position: fixed;
+  bottom: 60rpx;
+  right: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 20;
+  opacity: 0;
+  box-shadow: 0 0 10rpx 0 #999;
+  transition: 0.4s;
+}
+
+.top_on {
+  opacity: 0.6;
+}

@@ -1,0 +1,29 @@
+<view class='container'>
+  <image src='{{item.shopPic}}' class='top_img'></image>
+  <view class='title'><image src='/img/new_or_hot_shop/组2@2x.png' style='height:100rpx;width:340rpx;margin-top:16rpx'></image></view>
+
+  <view class='shops_detail'wx:if="{{new_or_hot_shop.length > 0}}" wx:for="{{new_or_hot_shop}}" wx:key="class">
+    <view class='container_buttom'>
+
+    <view class='container_buttom_shop'>   
+      <view class='shop_img'>{{item.shopPic}}</view>
+      <view class='shop_bottom'>
+        <view class='shop_name'>{{item.shopName}}</view>
+        <view class='shop_coupon'><image src='/img/new_or_hot_shop/领券立减拷贝@2x.png' style='width:104rpx;height:30rpx'></image></view>
+      </view>
+    </view>
+
+    <view class='container_buttom_shop'>   
+      <view class='shop_img'></view>
+      <view class='shop_bottom'>
+        <view class='shop_name'>洽味蜂蜜Miss</view>
+        <view class='shop_coupon'><image src='/img/new_or_hot_shop/领券立减拷贝@2x.png' style='width:104rpx;height:30rpx'></image></view>
+      </view>
+    </view>
+
+    </view>
+  </view>
+
+</view>
+
+<view wx:if="{{new_or_hot_shop.length > 0}}"></view>

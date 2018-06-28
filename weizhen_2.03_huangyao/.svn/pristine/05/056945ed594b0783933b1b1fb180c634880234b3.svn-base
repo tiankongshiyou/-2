@@ -1,0 +1,29 @@
+<!--pages/micro_powder/micro_powder.wxml-->
+<view class='micro_powder'>
+  <view class='letter'>
+    <text>A</text>
+  </view>
+
+  <view class='user_powder'>
+    <view class='user_sort'>
+      <view class='user_img'>
+        <image  style='width:100%;height:100%;background:skyblue'></image>
+      </view>
+      <view>蜡笔小新小剧场</view>
+    </view>
+  </view>
+  <view class='user_powder'>
+    <view class='user_sort'>
+      <view class='user_img'>
+        <image  style='width:100%;height:100%;background:skyblue'></image>
+      </view>
+      <view>蜡笔小新小剧场</view>
+    </view>
+  </view>
+
+
+  <view class='micro_btn' bindtap='bindtap'>
+    <text>规则说明</text>
+    <image src='/img/right_w.png' style='width:20rpx;margin-left:20rpx;height:35rpx;'></image>
+  </view>
+</view>

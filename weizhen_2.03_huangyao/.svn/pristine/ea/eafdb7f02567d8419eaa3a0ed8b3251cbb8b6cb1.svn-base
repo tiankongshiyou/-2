@@ -1,0 +1,11 @@
+<view class="auditing_finally">
+  <view class='auditing_state'>
+    <image src='/img/enter/5tanhao@2x.png'></image>
+  </view>
+  <view class='state'>审核未通过</view>
+  <view class='auditing_datum'>
+    <text>提交审核资料</text>
+    <image src='/img/enter/5sback@2x.png'></image>
+  </view>
+  <view class='state_reason'>您的审核未通过，请返回检查您的审核信息是否填写正确，如果有疑问，请在"会员中心-客服中心"中联系客服</view>
+</view>

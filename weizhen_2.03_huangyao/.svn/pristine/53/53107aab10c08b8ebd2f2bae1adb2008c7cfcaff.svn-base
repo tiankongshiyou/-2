@@ -1,0 +1,79 @@
+<view class='container'>
+  <view class='top'>
+    <view class='top-box'>
+      <view class='txt_img_time'>
+      
+        <view class='txt_img'>
+          <image src='/img/asset_details/cashwithdrawal@2x.png' style='width:78rpx;height:78rpx;margin-right:28rpx'></image>
+          <view>
+            <view style='font-size:30rpx;color:#333'>提现</view>
+            <view style='font-size:24rpx;color:#b7bbbf'>2017-03-21 05:21</view>
+          </view>
+        </view>
+        <view style='font-size:30rpx;color:#333;margin-left:290rpx'>-100</view>
+
+      </view>
+    </view>
+
+    <view class='top-box'>
+      <view class='txt_img_time'>
+      
+        <view class='txt_img'>
+          <image src='/img/asset_details/makecollections@2x.png' style='width:78rpx;height:78rpx;margin-right:28rpx'></image>
+          <view>
+            <view style='font-size:30rpx;color:#333'>收款</view>
+            <view style='font-size:24rpx;color:#b7bbbf'>2017-03-21 05:21</view>
+          </view>
+        </view>
+        <view style='font-size:30rpx;color:#333;margin-left:290rpx'>+200</view>
+
+      </view>
+    </view>
+
+    <view class='top-box'>
+      <view class='txt_img_time'>
+      
+        <view class='txt_img'>
+          <image src='/img/asset_details/generalization@2x.png' style='width:78rpx;height:78rpx;margin-right:28rpx'></image>
+          <view>
+            <view style='font-size:30rpx;color:#333'>推广佣金</view>
+            <view style='font-size:24rpx;color:#b7bbbf'>2017-03-21 05:21</view>
+          </view>
+        </view>
+        <view style='font-size:30rpx;color:#333;margin-left:290rpx'>+1000</view>
+
+      </view>
+    </view>
+
+    <view class='top-box'>
+      <view class='txt_img_time'>
+      
+        <view class='txt_img'>
+          <image src='/img/asset_details/welfare@2x.png' style='width:78rpx;height:78rpx;margin-right:28rpx'></image>
+          <view>
+            <view style='font-size:30rpx;color:#333'>粉丝福利</view>
+            <view style='font-size:24rpx;color:#b7bbbf'>2017-03-21 05:21</view>
+          </view>
+        </view>
+        <view style='font-size:30rpx;color:#333;margin-left:290rpx'>+2000</view>
+
+      </view>
+    </view>
+
+    <view class='top-box'>
+      <view class='txt_img_time'>
+      
+        <view class='txt_img'>
+          <image src='/img/asset_details/consumption@2x.png' style='width:78rpx;height:78rpx;margin-right:28rpx'></image>
+          <view>
+            <view style='font-size:30rpx;color:#333'>消费</view>
+            <view style='font-size:24rpx;color:#b7bbbf'>2017-03-21 05:21</view>
+          </view>
+        </view>
+        <view style='font-size:30rpx;color:#333;margin-left:290rpx'>-100</view>
+
+      </view>
+    </view>
+
+  </view>
+</view>

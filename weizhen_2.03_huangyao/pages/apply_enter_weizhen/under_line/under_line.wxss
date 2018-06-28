@@ -1,0 +1,115 @@
+page {
+  font-size: 30rpx;
+  background: #f3f5f7;
+}
+
+.payment {
+  background: #fff;
+  margin-top: 16rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.payoff, .payoff_consume, .payoff_coupon {
+    height: 100rpx;
+    margin: 0 42rpx;
+    display: flex;
+}
+
+.payoff {
+  align-items: center;
+}
+
+.payment_give {
+  color: #4d4d4d;
+}
+
+.payoff image {
+  width: 33rpx;
+  height: 30rpx;
+}
+
+.payoff image, .payment_seller {
+  margin-left: 16rpx;
+}
+
+.payment_seller {
+  color: #808080;
+  font-size: 26rpx;
+}
+
+.payoff_consume {
+  height: 164rpx;
+  font-size: 34rpx;
+  border-top: 1rpx solid #e6e6e6;
+  border-bottom: 1rpx solid #e6e6e6;
+  flex-direction: column;
+}
+
+.payoff_total {
+  margin-top: 26rpx;
+  margin-bottom: 22rpx;
+}
+
+.payoff_consume input {
+  color: #b7bbbf;
+}
+
+.payoff_entry {
+  color: #b7bbbf;
+}
+
+.payoff_coupon {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.usable_coupon {
+  color: #808080;
+}
+
+/* 合计按钮start */
+.summation {
+  width: 100%;
+  height: 98rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  width: 70%;
+  height: 98rpx;
+  font-size: 34rpx;
+  background: #fff;
+  padding-left: 24rpx;
+  border-top: 1rpx solid #e6e6e6;  
+  display: flex;
+  align-items: center;
+}
+
+.confirm {
+  color: #4d4d4d;
+}
+
+.money {
+  color: #e62318;
+}
+
+.preferential {
+  color: #808080;
+  font-size: 26rpx;
+  margin-left: 16rpx;
+}
+
+.submit button {
+  width: 240rpx;
+  height: 98rpx;
+  border-radius: 0;
+  color: #fff;
+  font-size: 34rpx;
+  background: #ff5d00;
+}
+/* 合计按钮end */

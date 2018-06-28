@@ -1,0 +1,47 @@
+<view class='enter'>
+  <!-- 立即成为商家start -->
+  <view class='aim_seller business' bindtap='commercialTenant'>
+    <view class='flow_path'>
+      <image class='path' src='/img/enter/1NO.@2x.png'></image>
+    </view>
+    <view class='procedure'>
+      <view class='material_left'>
+        <image class='material_picture' src='/img/enter/1shezhi@2x.png'></image>
+        <text class='material_script'>设置资料</text>
+      </view>
+      <view class='material_center'>
+        <image class='material_picture' src='/img/enter/1ruzhu@2x.png'></image>
+        <text class='material_script'>支付入驻</text>
+      </view>
+      <view class='material_right'>
+        <image class='material_picture' src='/img/enter/1tijiao@2x.png'></image>
+        <text class='material_script'>提交审核</text>
+      </view>
+    </view>
+    <view class='submit'>
+      <button>立即成为商家</button>
+    </view>
+  </view>
+  <!-- 立即成为商家end -->
+
+  <!-- 立即成为准商家start -->
+  <view class='aim_seller' bindtap='turnInto'>
+    <view class='flow'>
+      <image class='auditing' src='/img/enter/1.2NO.@2x.png'></image>
+    </view>
+    <view class='procedure procedure_seller'>
+      <view class='material_install'>
+        <image class='material_picture' src='/img/enter/1shezhi@2x.png'></image>
+        <text class='material_script'>设置资料</text>
+      </view>
+      <view class='material_defray'>
+        <image class='material_picture' src='/img/enter/1ruzhu@2x.png'></image>
+        <text class='material_script'>支付入驻</text>
+      </view>
+    </view>
+    <view class='submit'>
+      <button>立即成为准商家</button>
+    </view>  
+  </view>
+  <!-- 立即成为准商家end -->
+</view>

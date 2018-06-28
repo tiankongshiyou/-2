@@ -1,0 +1,158 @@
+<!--pages/center/property/property.wxml-->
+<view class='property'>
+  <!-- 累计收益 -->
+  <view class='poy_shouyi'>
+    <view class='poy_profit'>
+      <!-- 累计收益 -->
+      <view class='poy_protxt'>
+        <view class='poy_lei'>
+          <text style='font-size:64rpx;text-align:center' class='poy_txt'>{{total}}</text>
+          <view class='poy_proimg'>
+            <text style='color:#4d4d4d;'>累计收益(元)</text>
+            <image style='width:30rpx;height:30rpx;margin-left:10rpx;' src='/img/property/property_right.png' bindtap='asset_details'></image>
+          </view>
+        </view>
+      </view>
+
+      <!-- 钱分布 -->
+      <view class='in_all'>
+        <view class='in_allwide' wx:if="{{property.availableMoney == 0 || property.availableMoney == null}}">
+          <text class='poy_txttxt'>0.00</text>
+          <text style='font-size:30rpx;margin-top:10rpx;color:#4d4d4d;'>可用余额(元)</text>
+        </view>
+        <view class='in_allwide' wx:else>
+          <text class='poy_txttxt'>{{property.availableMoney}}</text>
+          <text style='font-size:30rpx;margin-top:10rpx;color:#4d4d4d;'>可用余额(元)</text>
+        </view>
+
+        <view class='xian'></view>
+
+        <view class='in_allwide' wx:if="{{property.availableMoney == 0 || property.availableMoney == null}}">
+          <text class='poy_txttxt'>0.00</text>
+          <text style='font-size:30rpx;margin-top:10rpx;color:#4d4d4d;'>推广余额(元)</text>
+        </view>
+        <view class='in_allwide' wx:else>
+          <text class='poy_txttxt'>{{property.availableMoney}}</text>
+          <text style='font-size:30rpx;margin-top:10rpx;color:#4d4d4d;'>推广余额(元)</text>
+        </view>
+        <view class='xian'></view>
+        <view class='in_allwide' wx:if="{{property.waterMoney == 0 || property.waterMoney == null}}">
+          <text class='poy_txttxt'>0.00</text>
+          <text style='font-size:30rpx;margin-top:10rpx;color:#4d4d4d;'>累计支出(元)</text>
+        </view>
+        <view class='in_allwide' wx:else>
+          <text class='poy_txttxt'>{{property.waterMoney}}</text>
+          <text style='font-size:30rpx;margin-top:10rpx;color:#4d4d4d;'>累计支出(元)</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 收支明细 -->
+  <view class='poy_shou'>
+    <view class='poy_detail'>
+      <view class='poy_detailtop'>
+        <text>收益明细</text>
+      </view>
+      <view class='poy_detailbtn'>
+        <view class='poy_detailmoy'>
+          <view class='pay_shouzhi' wx:if="{{property.availableMoney == 0 || property.availableMoney == null}}">
+            <text class='pay_shoutxt'>0.00</text>
+            <view class='pay_shouimg'>
+              <text>推荐收益(元)</text>
+            </view>
+          </view>
+          <view class='pay_shouzhi' wx:else>
+            <text class='pay_shoutxt'>{{property.availableMoney}}</text>
+            <view class='pay_shouimg'>
+              <text>推荐收益(元)</text>
+            </view>
+          </view>
+
+          <view class='pay_shouzhi'>
+            <text class='pay_shoutxt'>0.00</text>
+            <view class='pay_shouimg'>
+
+              <text>团队业绩(元)</text>
+            </view>
+          </view>
+        </view>
+
+        <view class='poy_detailmoy'>
+          <view class='pay_shouzhi'>
+            <text class='pay_shoutxt'>0.00</text>
+            <view class='pay_shouimg'>
+
+              <text>粉丝收益(元)</text>
+            </view>
+          </view>
+
+          <view class='pay_shouzhi'>
+            <text class='pay_shoutxt'>0.00</text>
+            <view class='pay_shouimg'>
+
+              <text>销售收益(元)</text>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+  <!-- 支出明细 -->
+  <view class='poy_zhi'>
+    <view class='poy_pay'>
+      <view class='poy_detailtop'>
+        <text>支出明细</text>
+      </view>
+      <view class='poy_detailbtn'>
+        <view class='poy_detailmoy'>
+          <view class='pay_shouzhi' wx:if='{{property.waterMoney == "" || property.waterMoney == null || property.waterMoney == undefined}}'>
+            <text class='pay_shoutxt'>0.00</text>
+            <view class='pay_shouimg'>
+              <text>消费支出(元)</text>
+            </view>
+          </view>
+          <view class='pay_shouzhi' wx:else>
+            <text class='pay_shoutxt'>0.00</text>
+            <text class='pay_shoutxt'>{{property.waterMoney}}</text>
+            <view class='pay_shouimg'>
+
+              <text>消费支出(元)</text>
+            </view>
+          </view>
+
+          <view class='pay_shouzhi'>
+            <text class='pay_shoutxt'>0.00</text>
+            <view class='pay_shouimg'>
+
+              <text>已提现(元)</text>
+            </view>
+          </view>
+        </view>
+
+        <view class='poy_detailmoy'>
+          <view class='pay_shouzhi'>
+            <text class='pay_shoutxt'>0.00</text>
+            <view class='pay_shouimg'>
+
+              <text>提现中(元)</text>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部按钮 -->
+  <view class='pro_btn'>
+    <view class='pro_btnleft' bindtap='withdrawal_record'>
+      <image style='width:36rpx;height:46rpx;' src='/img/property/property_list.png'></image>
+      <text>提现记录</text>
+    </view>
+    <view class='pro_btnright' bindtap='withdraw_cash'>
+      <image src='/img/property/property_money.png' style='width:30rpx;height:33rpx;margin-right:10rpx;'></image>
+      <text>我要提现</text>
+    </view>
+  </view>
+</view>

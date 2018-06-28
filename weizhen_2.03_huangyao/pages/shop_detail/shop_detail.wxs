@@ -1,0 +1,13 @@
+var cut_text = function (text) {
+  if (text != null && text != undefined) {
+    if (text.length >= 40) {
+      var new_text = text.substring(0,40) + "...";
+      return new_text
+    }
+  } else {
+    return
+  }
+}
+module.exports = {
+  cut_text: cut_text,
+};

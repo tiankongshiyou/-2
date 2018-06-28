@@ -1,0 +1,19 @@
+<view class="auditing_finally">
+  <view class='auditing_state'>
+    <image src='/img/enter/4jian@2x.png'></image>
+  </view>
+  <view class='state'>正在审核中</view>
+  <view class='state_reason'>您提交审核资料后，我们将会在3个工作日内给出审核结果，如果有疑问，请在"会员中心-客服中心"中联系客服</view>
+</view>
+
+ <view class="auditing_finally">
+  <view class='auditing_state'>
+    <image src='/img/enter/5tanhao@2x.png'></image>
+  </view>
+  <view class='state'>审核未通过</view>
+  <view class='refer'>
+    <text>提交审核资料</text>
+    <image src='/img/enter/5sback@2x.png'></image>
+  </view>
+  <view class='state_reason'>您提交审核资料后，我们将会在3个工作日内给出审核结果，如果有疑问，请在"会员中心-客服中心"中联系客服</view>
+</view> 

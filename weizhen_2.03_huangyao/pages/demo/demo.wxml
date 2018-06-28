@@ -1,0 +1,68 @@
+<scroll-view class='height_bg' scroll-y="true" bindscroll="onScroll" bindscrolltolower="loadMore" lower-threshold="20">
+<view class='goods_box' style='background:#fff'>
+  <view class='goods_detail' bindtap='goto_goods_detail'>
+    <image src='' class='goods_img'></image>
+    <view class='goods_name'>草莓蛋糕奶油</view>
+    <view class='goods_prices'>￥200.00</view>
+  </view>
+  <view class='goods_detail'>
+    <image src='' class='goods_img'></image>
+    <view class='goods_name'>草莓蛋糕奶油</view>
+    <view class='goods_prices'>￥200.00</view>
+  </view>
+  <view class='goods_detail'>
+    <image src='' class='goods_img'></image>
+    <view class='goods_name'>草莓蛋糕奶油</view>
+    <view class='goods_prices'>￥200.00</view>
+  </view>
+  <view class='goods_detail'>
+    <image src='' class='goods_img'></image>
+    <view class='goods_name'>草莓蛋糕奶油</view>
+    <view class='goods_prices'>￥200.00</view>
+  </view>
+</view>
+  <view class='goods_box' style='background:#fff'>
+    <view class='goods_detail' bindtap='goto_goods_detail'>
+      <image src='' class='goods_img'></image>
+      <view class='goods_name'>草莓蛋糕奶油</view>
+      <view class='goods_prices'>￥200.00</view>
+    </view>
+    <view class='goods_detail'>
+      <image src='' class='goods_img'></image>
+      <view class='goods_name'>草莓蛋糕奶油</view>
+      <view class='goods_prices'>￥200.00</view>
+    </view>
+    <view class='goods_detail'>
+      <image src='' class='goods_img'></image>
+      <view class='goods_name'>草莓蛋糕奶油</view>
+      <view class='goods_prices'>￥200.00</view>
+    </view>
+    <view class='goods_detail'>
+      <image src='' class='goods_img'></image>
+      <view class='goods_name'>草莓蛋糕奶油</view>
+      <view class='goods_prices'>￥200.00</view>
+    </view>
+  </view>
+  <view class='goods_box' style='background:#fff'>
+    <view class='goods_detail' bindtap='goto_goods_detail'>
+      <image src='' class='goods_img'></image>
+      <view class='goods_name'>草莓蛋糕奶油</view>
+      <view class='goods_prices'>￥200.00</view>
+    </view>
+    <view class='goods_detail'>
+      <image src='' class='goods_img'></image>
+      <view class='goods_name'>草莓蛋糕奶油</view>
+      <view class='goods_prices'>￥200.00</view>
+    </view>
+    <view class='goods_detail'>
+      <image src='' class='goods_img'></image>
+      <view class='goods_name'>草莓蛋糕奶油</view>
+      <view class='goods_prices'>￥200.00</view>
+    </view>
+    <view class='goods_detail'>
+      <image src='' class='goods_img'></image>
+      <view class='goods_name'>草莓蛋糕奶油</view>
+      <view class='goods_prices'>￥200.00</view>
+    </view>
+  </view>
+</scroll-view>

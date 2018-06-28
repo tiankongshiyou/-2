@@ -1,0 +1,78 @@
+<view class='container'>
+  <!-- table菜单栏start  -->
+  <view class='class_choose'>
+    <view class='choose_whole {{cur_class == 0? "active_class":""}} {{showList? "whole_on":""}}' bindtap='tap_class' data-class_id='0'>
+      <text>全部</text>
+    </view>
+    <scroll-view class='choose_left {{showList? "left_on":""}}' scroll-x>
+      <block wx:for="{{classes}}" wx:key="classes1">
+        <view class='scroll_item_detail {{cur_class ==item.categoryId? "active_class":""}}' data-class_id='{{item.categoryId}}' bindtap='tap_class'>{{item.categoryName}}</view>
+      </block>
+    </scroll-view>
+  <!-- 菜单动画线条start -->
+  <view class='choose_right' catchtap='show_whole_class'>
+    <view class='line {{showList? "onA":"a"}}'></view>
+    <view class='line {{showList? "onB":"b"}}'></view>
+    <view class='line {{showList? "onC":"c"}}'></view>
+  </view>
+  <!-- 菜单动画线条end -->
+  </view>
+  <!-- 全部菜单start -->
+  <view class='whole_class {{showList? "on":""}}'>
+    <block wx:for="{{classes}}" wx:key="classes2">
+      <view class='whole_class_item'>
+        <view class='class_name'>{{item.categoryName}}</view>
+      </view>
+    </block>
+  </view>
+  <!-- 全部菜单end -->
+  
+  <!-- 领取优惠券start -->
+  <view class='receive_coupon'>
+    <image src='/img/defrayal/4quan@2x.png'></image>
+    <view class='off_hand'>
+      <view class='coupon_left'>
+        <view class='coupon_shop'>
+          <image src='/img/defrayal/4photo@2x.png'></image>
+        </view>
+        <view class='coupon_detail'>
+          <view class='trade_name'>良品铺子</view>
+          <view class='coupon_money'>
+            <text class='symbol'>￥</text>
+            <text class='money'>500</text>
+            <text class='coupon_full'>满99元使用</text>
+          </view>
+        </view>
+      </view>
+      <view class='coupon_right'>
+        <image src='/img/defrayal/4yiqiang@2x.png'></image>
+        <view class='pull_down'>立即领取</view>
+      </view>
+    </view>
+  </view>
+  <!-- 领取优惠券end -->
+  <!-- 已领取优惠券start -->
+  <view class='receive_coupon'>
+    <image src='/img/defrayal/4quan@2x.png'></image>
+    <view class='off_hand'>
+      <view class='coupon_left'>
+        <view class='coupon_shop'>
+          <image src='/img/defrayal/4photo@2x.png'></image>
+        </view>
+        <view class='coupon_detail'>
+          <view class='trade_name'>良品铺子</view>
+          <view class='coupon_money'>
+            <text class='symbol'>￥</text>
+            <text class='money'>500</text>
+            <text class='coupon_full'>满99元使用</text>
+          </view>
+        </view>
+      </view>
+      <view class='coupon_right'>
+        <image src='/img/defrayal/4used@2x.png'></image>
+        <view class='pull_down bestow'>去使用</view>
+      </view>
+    </view>
+  </view>
+  <!-- 已领取优惠券end -->
+</view>

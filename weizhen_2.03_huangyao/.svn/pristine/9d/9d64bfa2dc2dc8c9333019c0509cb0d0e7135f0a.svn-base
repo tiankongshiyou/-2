@@ -1,0 +1,82 @@
+@import '../return_success/return_success.wxss';
+
+.order_confirm{
+  height: 140rpx;
+  margin-top: 16rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.shouhuo{
+  width: 100%;
+  height: 130rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.order{
+  margin-top:0;
+}
+.order_bottom {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.order_bottom{
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  color:#2b333b;
+}
+.order_liuyan{
+  width: 100%;
+  height: 260rpx;
+  background-color: #fff;
+  margin-top: 16rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 110rpx;
+}
+.title{
+  width: 165rpx;
+  height: 90%;
+   /* background-color: #ccc;  */
+  
+  text-align: right;
+  font-size: 26rpx;
+  color: #2b333b;
+}
+.text{
+  width: 540rpx;
+  height: 90%;
+  /* background-color: #ddd; */
+  font-size: 30rpx;
+  color: #2b333b;
+}
+.submit_order{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 106rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ 
+}
+.submit{
+  width: 200rpx;
+  height: 106rpx;
+  background-color: #ee404a;
+  color: #fff;
+  line-height: 106rpx;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

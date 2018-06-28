@@ -1,0 +1,25 @@
+<view class='address'>
+  <view class='location'>
+    <view class='user_info'>
+      <text class='name'>姓名</text>
+      <text class='cellphone'>15197733786</text>
+    </view>
+    <view class='user_address'>湖南省 长沙市 天心区保利国际B3栋天心区保利国际B3栋</view>
+  </view>
+  <view class='site'>
+    <view class='default'>
+      <image src='/img/not-Selected@2x.png'></image>
+      <text>默认地址</text>
+    </view>
+    <view class='option'>
+      <view class='editor'>
+        <image src='/img/delete@2x.png'></image>
+        <text>编辑</text>
+      </view>
+      <view class='delete'>
+        <image src='/img/editor2@2x.png'></image>
+        <text>删除</text>
+      </view>
+    </view>
+  </view>
+</view>

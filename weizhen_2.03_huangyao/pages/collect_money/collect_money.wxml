@@ -1,0 +1,26 @@
+<view class="shop">
+  <image class='shop_img' src='/img/enter/bg2@2x.png'></image>
+  <!-- 店铺收钱start -->
+  <view class='collect_money'>
+    <view class='shop_money'>
+      <image src='/img/enter/logo@2x.png'></image>
+      <text>店铺收钱</text>
+    </view>
+    <view class='scanning'>
+      <text>扫描下方二维码想我付钱</text>
+    </view>
+    <view class='dimension_code'>
+      <image src='/img/enter/dimension_code.png'></image>
+    </view>
+    <view class='baseon'>
+      <text>基于12亿微信用户的商家共赢平台</text>
+    </view>
+  </view>
+  <!-- 店铺收钱end -->
+</view>
+<!-- 公司标志start -->
+<view class='designate'>
+  <image src='/img/enter/foot2@2x.png'></image>
+</view>
+<!-- 公司标志end -->
+
